@@ -1,0 +1,156 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+# Date created = 01:33:24  October 15, 2018
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Pikachus_Adventure_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CSEMA5F31C6
+set_global_assignment -name TOP_LEVEL_ENTITY tb_ALU
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "01:33:24  OCTOBER 15, 2018"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.0.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name BOARD "DE1-SoC Board"
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (SystemVerilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "SYSTEMVERILOG HDL" -section_id eda_simulation
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_location_assignment PIN_A13 -to r[0]
+set_location_assignment PIN_C13 -to r[1]
+set_location_assignment PIN_E13 -to r[2]
+set_location_assignment PIN_B12 -to r[3]
+set_location_assignment PIN_C12 -to r[4]
+set_location_assignment PIN_D12 -to r[5]
+set_location_assignment PIN_E12 -to r[6]
+set_location_assignment PIN_F13 -to r[7]
+set_location_assignment PIN_J9 -to g[0]
+set_location_assignment PIN_J10 -to g[1]
+set_location_assignment PIN_H12 -to g[2]
+set_location_assignment PIN_G10 -to g[3]
+set_location_assignment PIN_G11 -to g[4]
+set_location_assignment PIN_G12 -to g[5]
+set_location_assignment PIN_F11 -to g[6]
+set_location_assignment PIN_E11 -to g[7]
+set_location_assignment PIN_B13 -to b[0]
+set_location_assignment PIN_G13 -to b[1]
+set_location_assignment PIN_H13 -to b[2]
+set_location_assignment PIN_F14 -to b[3]
+set_location_assignment PIN_H14 -to b[4]
+set_location_assignment PIN_F15 -to b[5]
+set_location_assignment PIN_G15 -to b[6]
+set_location_assignment PIN_J14 -to b[7]
+set_location_assignment PIN_A11 -to n25MHZCLK
+set_location_assignment PIN_F10 -to n_blanc
+set_location_assignment PIN_C10 -to n_sync
+set_location_assignment PIN_B11 -to hsync
+set_location_assignment PIN_D11 -to vsync
+set_location_assignment PIN_AF14 -to clk
+set_location_assignment PIN_AB12 -to reset
+set_location_assignment PIN_AE26 -to hex0[6]
+set_location_assignment PIN_AE27 -to hex0[5]
+set_location_assignment PIN_AE28 -to hex0[4]
+set_location_assignment PIN_AG27 -to hex0[3]
+set_location_assignment PIN_AF28 -to hex0[2]
+set_location_assignment PIN_AG28 -to hex0[1]
+set_location_assignment PIN_AH28 -to hex0[0]
+set_location_assignment PIN_AJ29 -to hex1[6]
+set_location_assignment PIN_AH29 -to hex1[5]
+set_location_assignment PIN_AH30 -to hex1[4]
+set_location_assignment PIN_AG30 -to hex1[3]
+set_location_assignment PIN_AF29 -to hex1[2]
+set_location_assignment PIN_AF30 -to hex1[1]
+set_location_assignment PIN_AD27 -to hex1[0]
+set_location_assignment PIN_AD7 -to PS2_CLK
+set_location_assignment PIN_AE7 -to PS2_DATA
+set_location_assignment PIN_V16 -to led_Y[0]
+set_location_assignment PIN_W16 -to led_Y[1]
+set_location_assignment PIN_V17 -to led_Y[2]
+set_location_assignment PIN_V18 -to led_Y[3]
+set_location_assignment PIN_W19 -to led_x[0]
+set_location_assignment PIN_Y19 -to led_x[1]
+set_location_assignment PIN_W20 -to led_x[2]
+set_location_assignment PIN_W21 -to led_x[3]
+set_global_assignment -name SYSTEMVERILOG_FILE Processor/ALU/xor_A.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processor/ALU/tb_ALU.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processor/ALU/sumador.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processor/ALU/simpleAdder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processor/ALU/right_shift_logic.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processor/ALU/right_shift_arithmetic.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processor/ALU/or_A.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processor/ALU/not_A.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processor/ALU/mux_Sumador.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processor/ALU/mux_ALU.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processor/ALU/left_shift_logic.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processor/ALU/left_shift_arithmetic.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processor/ALU/flags.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processor/ALU/and_A.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processor/ALU/ALU_N_bits.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processor/register_file.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processor/REG_EN.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processor/PROCESSOR.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processor/PC_REG.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processor/muxARM.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processor/instruction_memory.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processor/extend.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processor/decoder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processor/data_path.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processor/data_memory.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processor/control_unit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processor/conditions.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processor/conditional_logic.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processor/ARMV4.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processor/adderARM.sv
+set_global_assignment -name SYSTEMVERILOG_FILE block_repeater.sv
+set_global_assignment -name SYSTEMVERILOG_FILE sprite_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../../7SegmentDisplay/sevenSegmentDisplay.sv
+set_global_assignment -name SYSTEMVERILOG_FILE "../PS-2_Controller/keyboard_controller.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE ../../LAB_5/VGA_Controller_FPGA/VGA_Controller.sv
+set_global_assignment -name SYSTEMVERILOG_FILE main.sv
+set_global_assignment -name SYSTEMVERILOG_FILE pikachu.sv
+set_global_assignment -name SYSTEMVERILOG_FILE block.sv
+set_global_assignment -name SYSTEMVERILOG_FILE color_mux.sv
+set_global_assignment -name SYSTEMVERILOG_FILE block_repeater_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE cloud.sv
+set_global_assignment -name SYSTEMVERILOG_FILE tb_assembly.sv
+set_global_assignment -name SYSTEMVERILOG_FILE coin.sv
+set_global_assignment -name SYSTEMVERILOG_FILE numbers.sv
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

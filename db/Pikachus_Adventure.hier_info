@@ -1,0 +1,257 @@
+|tb_ALU
+
+
+|tb_ALU|ALU_N_bits:dut
+A[0] => A[0].IN10
+A[1] => A[1].IN10
+A[2] => A[2].IN10
+A[3] => A[3].IN10
+B[0] => B[0].IN5
+B[1] => B[1].IN5
+B[2] => B[2].IN5
+B[3] => B[3].IN5
+ALUControl[0] => ALUControl[0].IN4
+ALUControl[1] => ALUControl[1].IN3
+ALUControl[2] => ALUControl[2].IN3
+ALUControl[3] => ALUControl[3].IN3
+flags[0] <= flags:flags_F.port6
+flags[1] <= flags:flags_F.port6
+flags[2] <= flags:flags_F.port6
+flags[3] <= flags:flags_F.port6
+RESULT[0] <= RESULT[0].DB_MAX_OUTPUT_PORT_TYPE
+RESULT[1] <= RESULT[1].DB_MAX_OUTPUT_PORT_TYPE
+RESULT[2] <= RESULT[2].DB_MAX_OUTPUT_PORT_TYPE
+RESULT[3] <= RESULT[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|tb_ALU|ALU_N_bits:dut|mux_Sumador:mux_S
+B[0] => OUT.DATAA
+B[1] => OUT.DATAA
+B[2] => OUT.DATAA
+B[3] => OUT.DATAA
+NOT_B[0] => OUT.DATAB
+NOT_B[1] => OUT.DATAB
+NOT_B[2] => OUT.DATAB
+NOT_B[3] => OUT.DATAB
+SELECTOR[0] => Equal0.IN7
+SELECTOR[1] => Equal0.IN6
+SELECTOR[2] => Equal0.IN5
+SELECTOR[3] => Equal0.IN4
+OUT[0] <= OUT.DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= OUT.DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= OUT.DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= OUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|tb_ALU|ALU_N_bits:dut|sumador:suma_F
+a[0] => _.DATAD
+a[1] => _.DATAD
+a[2] => _.DATAD
+a[3] => _.DATAD
+b[0] => _.DATAC
+b[1] => _.DATAC
+b[2] => _.DATAC
+b[3] => _.DATAC
+cin => _.DATAB
+s[0] <= _.SUM_OUT
+s[1] <= _.SUM_OUT
+s[2] <= _.SUM_OUT
+s[3] <= _.SUM_OUT
+cout <= _.SUM_OUT
+
+
+|tb_ALU|ALU_N_bits:dut|and_A:and_F
+a[0] => s.IN0
+a[1] => s.IN0
+a[2] => s.IN0
+a[3] => s.IN0
+b[0] => s.IN1
+b[1] => s.IN1
+b[2] => s.IN1
+b[3] => s.IN1
+s[0] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|tb_ALU|ALU_N_bits:dut|or_A:or_F
+a[0] => s.IN0
+a[1] => s.IN0
+a[2] => s.IN0
+a[3] => s.IN0
+b[0] => s.IN1
+b[1] => s.IN1
+b[2] => s.IN1
+b[3] => s.IN1
+s[0] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|tb_ALU|ALU_N_bits:dut|xor_A:xor_F
+a[0] => s.IN0
+a[1] => s.IN0
+a[2] => s.IN0
+a[3] => s.IN0
+b[0] => s.IN1
+b[1] => s.IN1
+b[2] => s.IN1
+b[3] => s.IN1
+s[0] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|tb_ALU|ALU_N_bits:dut|not_A:not_F
+a[0] => s[0].DATAIN
+a[1] => s[1].DATAIN
+a[2] => s[2].DATAIN
+a[3] => s[3].DATAIN
+s[0] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|tb_ALU|ALU_N_bits:dut|left_shift_arithmetic:lsa
+a[0] => s[1].DATAIN
+a[1] => s[2].DATAIN
+a[2] => s[3].DATAIN
+a[3] => ~NO_FANOUT~
+s[0] <= <GND>
+s[1] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|tb_ALU|ALU_N_bits:dut|right_shift_arithmetic:rsa
+a[0] => ~NO_FANOUT~
+a[1] => s[0].DATAIN
+a[2] => s[1].DATAIN
+a[3] => s[2].DATAIN
+a[3] => s[3].DATAIN
+s[0] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|tb_ALU|ALU_N_bits:dut|left_shift_logic:lsl
+a[0] => s[1].DATAIN
+a[1] => s[2].DATAIN
+a[2] => s[3].DATAIN
+a[3] => ~NO_FANOUT~
+s[0] <= <GND>
+s[1] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|tb_ALU|ALU_N_bits:dut|right_shift_logic:rsl
+a[0] => ~NO_FANOUT~
+a[1] => s[0].DATAIN
+a[2] => s[1].DATAIN
+a[3] => s[2].DATAIN
+s[0] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= <GND>
+
+
+|tb_ALU|ALU_N_bits:dut|mux_ALU:mux_F
+SUMA[0] => Mux3.IN6
+SUMA[1] => Mux2.IN6
+SUMA[2] => Mux1.IN6
+SUMA[3] => Mux0.IN6
+RESTA[0] => Mux3.IN7
+RESTA[1] => Mux2.IN7
+RESTA[2] => Mux1.IN7
+RESTA[3] => Mux0.IN7
+AND[0] => Mux3.IN8
+AND[1] => Mux2.IN8
+AND[2] => Mux1.IN8
+AND[3] => Mux0.IN8
+OR[0] => Mux3.IN9
+OR[1] => Mux2.IN9
+OR[2] => Mux1.IN9
+OR[3] => Mux0.IN9
+XOR[0] => Mux3.IN10
+XOR[1] => Mux2.IN10
+XOR[2] => Mux1.IN10
+XOR[3] => Mux0.IN10
+NOT[0] => Mux3.IN11
+NOT[1] => Mux2.IN11
+NOT[2] => Mux1.IN11
+NOT[3] => Mux0.IN11
+LEFT_SHIFT_ARITH[0] => Mux3.IN12
+LEFT_SHIFT_ARITH[1] => Mux2.IN12
+LEFT_SHIFT_ARITH[2] => Mux1.IN12
+LEFT_SHIFT_ARITH[3] => Mux0.IN12
+RIGHT_SHIFT_ARITH[0] => Mux3.IN13
+RIGHT_SHIFT_ARITH[1] => Mux2.IN13
+RIGHT_SHIFT_ARITH[2] => Mux1.IN13
+RIGHT_SHIFT_ARITH[3] => Mux0.IN13
+LEFT_SHIFT_LOGIC[0] => Mux3.IN14
+LEFT_SHIFT_LOGIC[1] => Mux2.IN14
+LEFT_SHIFT_LOGIC[2] => Mux1.IN14
+LEFT_SHIFT_LOGIC[3] => Mux0.IN14
+RIGHT_SHIFT_LOGIC[0] => Mux3.IN15
+RIGHT_SHIFT_LOGIC[1] => Mux2.IN15
+RIGHT_SHIFT_LOGIC[2] => Mux1.IN15
+RIGHT_SHIFT_LOGIC[3] => Mux0.IN15
+SELECTOR[0] => Mux0.IN19
+SELECTOR[0] => Mux1.IN19
+SELECTOR[0] => Mux2.IN19
+SELECTOR[0] => Mux3.IN19
+SELECTOR[1] => Mux0.IN18
+SELECTOR[1] => Mux1.IN18
+SELECTOR[1] => Mux2.IN18
+SELECTOR[1] => Mux3.IN18
+SELECTOR[2] => Mux0.IN17
+SELECTOR[2] => Mux1.IN17
+SELECTOR[2] => Mux2.IN17
+SELECTOR[2] => Mux3.IN17
+SELECTOR[3] => Mux0.IN16
+SELECTOR[3] => Mux1.IN16
+SELECTOR[3] => Mux2.IN16
+SELECTOR[3] => Mux3.IN16
+OUT[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|tb_ALU|ALU_N_bits:dut|flags:flags_F
+A[0] => ~NO_FANOUT~
+A[1] => ~NO_FANOUT~
+A[2] => ~NO_FANOUT~
+A[3] => V.IN0
+A[3] => V.IN0
+B[0] => ~NO_FANOUT~
+B[1] => ~NO_FANOUT~
+B[2] => ~NO_FANOUT~
+B[3] => V.IN1
+SUM[0] => ~NO_FANOUT~
+SUM[1] => ~NO_FANOUT~
+SUM[2] => ~NO_FANOUT~
+SUM[3] => V.IN1
+result[0] => Equal0.IN31
+result[1] => Equal0.IN30
+result[2] => Equal0.IN29
+result[3] => FLAGS[2].DATAIN
+result[3] => Equal0.IN28
+Cout => C.IN0
+ALUControl[0] => V.IN1
+ALUControl[1] => C.IN1
+ALUControl[1] => V.IN1
+ALUControl[2] => ~NO_FANOUT~
+ALUControl[3] => ~NO_FANOUT~
+FLAGS[0] <= V.DB_MAX_OUTPUT_PORT_TYPE
+FLAGS[1] <= C.DB_MAX_OUTPUT_PORT_TYPE
+FLAGS[2] <= result[3].DB_MAX_OUTPUT_PORT_TYPE
+FLAGS[3] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+

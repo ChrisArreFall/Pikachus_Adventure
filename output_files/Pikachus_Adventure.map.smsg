@@ -1,0 +1,5 @@
+Warning (10273): Verilog HDL warning at extend.sv(14): extended using "x" or "z" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/extend.sv Line: 14
+Warning (10273): Verilog HDL warning at decoder.sv(102): extended using "x" or "z" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/decoder.sv Line: 102
+Warning (10268): Verilog HDL information at block_repeater.sv(15): always construct contains both blocking and non-blocking assignments File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/block_repeater.sv Line: 15
+Info (10281): Verilog HDL Declaration information at block_repeater.sv(3): object "r" differs only in case from object "R" in the same scope File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/block_repeater.sv Line: 3
+Warning (10268): Verilog HDL information at sprite_tb.sv(15): always construct contains both blocking and non-blocking assignments File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/sprite_tb.sv Line: 15

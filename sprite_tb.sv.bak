@@ -1,0 +1,30 @@
+module sprite_tb();
+			logic [9:0] pos_x = 4,pos_y = 5,x=0,y=0;
+			logic enable=0,clk;
+			logic [7:0] r,g,b;
+			
+			// instantiate device to be tested 
+			pikachu dut(x,y,pos_x,pos_y,enable,r,g,b);
+			// generate clock to sequence tests 
+			always 
+				begin 
+					clk <= 1; # 5; 
+					clk <= 0; # 5; 
+				end
+			
+			always_ff@(posedge clk)
+				if(y<11)
+					begin
+						if(x<11)
+							begin
+								x <= x+1;
+							end
+						else
+							begin
+								x <= 0;
+								y <= y+1;
+							end
+					end
+				else
+					y <= 0;
+endmodule 

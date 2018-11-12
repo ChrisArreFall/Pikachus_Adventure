@@ -1,0 +1,10 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure {C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/sprite_tb.sv}
+vlog -sv -work work +incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure {C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/pikachu.sv}
+

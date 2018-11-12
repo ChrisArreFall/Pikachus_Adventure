@@ -1,0 +1,197 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'VGA_Controller:VGA_Controller_Unit|pixel_temp'
+Slack : -12.437
+TNS   : -19008.427
+
+Type  : Slow 1100mV 85C Model Setup 'keyboard_controller:keyboard_controller_F|FLAG'
+Slack : -10.449
+TNS   : -165.216
+
+Type  : Slow 1100mV 85C Model Setup 'PS2_CLK'
+Slack : -7.871
+TNS   : -28.174
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -4.196
+TNS   : -78.898
+
+Type  : Slow 1100mV 85C Model Hold 'PS2_CLK'
+Slack : 0.221
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'VGA_Controller:VGA_Controller_Unit|pixel_temp'
+Slack : 0.236
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : 0.373
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'keyboard_controller:keyboard_controller_F|FLAG'
+Slack : 0.754
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.762
+TNS   : -12.922
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'VGA_Controller:VGA_Controller_Unit|pixel_temp'
+Slack : -0.480
+TNS   : -1205.902
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'PS2_CLK'
+Slack : -0.394
+TNS   : -11.896
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'keyboard_controller:keyboard_controller_F|FLAG'
+Slack : -0.394
+TNS   : -8.250
+
+Type  : Slow 1100mV 0C Model Setup 'VGA_Controller:VGA_Controller_Unit|pixel_temp'
+Slack : -12.012
+TNS   : -18503.804
+
+Type  : Slow 1100mV 0C Model Setup 'keyboard_controller:keyboard_controller_F|FLAG'
+Slack : -10.137
+TNS   : -160.513
+
+Type  : Slow 1100mV 0C Model Setup 'PS2_CLK'
+Slack : -7.702
+TNS   : -27.126
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -4.026
+TNS   : -72.820
+
+Type  : Slow 1100mV 0C Model Hold 'VGA_Controller:VGA_Controller_Unit|pixel_temp'
+Slack : 0.231
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'PS2_CLK'
+Slack : 0.281
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : 0.373
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'keyboard_controller:keyboard_controller_F|FLAG'
+Slack : 0.748
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.762
+TNS   : -13.739
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'PS2_CLK'
+Slack : -0.480
+TNS   : -10.998
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'VGA_Controller:VGA_Controller_Unit|pixel_temp'
+Slack : -0.465
+TNS   : -1186.933
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'keyboard_controller:keyboard_controller_F|FLAG'
+Slack : -0.394
+TNS   : -8.173
+
+Type  : Fast 1100mV 85C Model Setup 'VGA_Controller:VGA_Controller_Unit|pixel_temp'
+Slack : -7.812
+TNS   : -11460.567
+
+Type  : Fast 1100mV 85C Model Setup 'keyboard_controller:keyboard_controller_F|FLAG'
+Slack : -6.077
+TNS   : -95.986
+
+Type  : Fast 1100mV 85C Model Setup 'PS2_CLK'
+Slack : -4.370
+TNS   : -9.759
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -2.764
+TNS   : -49.632
+
+Type  : Fast 1100mV 85C Model Hold 'VGA_Controller:VGA_Controller_Unit|pixel_temp'
+Slack : -0.019
+TNS   : -0.024
+
+Type  : Fast 1100mV 85C Model Hold 'PS2_CLK'
+Slack : 0.140
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : 0.213
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'keyboard_controller:keyboard_controller_F|FLAG'
+Slack : 0.319
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.673
+TNS   : -2.893
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'PS2_CLK'
+Slack : -0.522
+TNS   : -8.228
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'VGA_Controller:VGA_Controller_Unit|pixel_temp'
+Slack : -0.211
+TNS   : -152.871
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'keyboard_controller:keyboard_controller_F|FLAG'
+Slack : 0.123
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'VGA_Controller:VGA_Controller_Unit|pixel_temp'
+Slack : -6.901
+TNS   : -10257.273
+
+Type  : Fast 1100mV 0C Model Setup 'keyboard_controller:keyboard_controller_F|FLAG'
+Slack : -5.787
+TNS   : -91.511
+
+Type  : Fast 1100mV 0C Model Setup 'PS2_CLK'
+Slack : -4.070
+TNS   : -8.082
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -2.348
+TNS   : -40.328
+
+Type  : Fast 1100mV 0C Model Hold 'VGA_Controller:VGA_Controller_Unit|pixel_temp'
+Slack : -0.067
+TNS   : -0.148
+
+Type  : Fast 1100mV 0C Model Hold 'PS2_CLK'
+Slack : 0.149
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : 0.195
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'keyboard_controller:keyboard_controller_F|FLAG'
+Slack : 0.290
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.649
+TNS   : -2.843
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'PS2_CLK'
+Slack : -0.534
+TNS   : -7.901
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'VGA_Controller:VGA_Controller_Unit|pixel_temp'
+Slack : -0.130
+TNS   : -77.115
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'keyboard_controller:keyboard_controller_F|FLAG'
+Slack : 0.134
+TNS   : 0.000
+
+------------------------------------------------------------

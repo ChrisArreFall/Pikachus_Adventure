@@ -1,0 +1,16 @@
+module block_repeater(input logic [9:0] x,y,
+							 output logic [7:0] r,g,b);
+				logic [9:0] diff_x,diff_y,pos_x = 0,pos_y = 350;
+ 				block block_unit(x,y,pos_x,pos_y,enable,temp_r,temp_g,temp_b);
+
+				assign diff_x = x-pos_x;
+				assign diff_y = y-pos_y;
+				always_ff@(posedge flag)
+				if(diff_y>200&&diff_y<231)
+					begin
+						if(diff_x == 31)
+							pos_x <= x + 1;
+						else if(x==639)
+							pos_x <= 0;
+					end
+endmodule 

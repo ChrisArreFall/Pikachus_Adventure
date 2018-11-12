@@ -1,0 +1,9 @@
+		mov		R1, #1 					;aqui almaceno la variable del teclado que nos dice ir para la derecha
+		mov		R2, #2 					;aqui almaceno la variable del teclado que nos dispara
+		mov		R3, #3 					;aqui guardo la posicion de los bloques y pikachu (0-31)
+		mov		R4, #4					;aqui almaceno la variable del teclado que nos dice ir para la derecha
+		mov		R5, #5
+		mov		R6, #0x100
+		str		r1, [R6, #0]
+		
+		

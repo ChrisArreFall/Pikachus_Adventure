@@ -1,5 +1,5 @@
-Analysis & Elaboration report for Pikachus_Adventure
-Mon Nov 12 17:38:29 2018
+Analysis & Synthesis report for Pikachus_Adventure
+Tue Nov 13 17:41:30 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -7,25 +7,52 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: ALU_N_bits:dut
-  5. Parameter Settings for User Entity Instance: ALU_N_bits:dut|mux_Sumador:mux_S
-  6. Parameter Settings for User Entity Instance: ALU_N_bits:dut|sumador:suma_F
-  7. Parameter Settings for User Entity Instance: ALU_N_bits:dut|and_A:and_F
-  8. Parameter Settings for User Entity Instance: ALU_N_bits:dut|or_A:or_F
-  9. Parameter Settings for User Entity Instance: ALU_N_bits:dut|xor_A:xor_F
- 10. Parameter Settings for User Entity Instance: ALU_N_bits:dut|not_A:not_F
- 11. Parameter Settings for User Entity Instance: ALU_N_bits:dut|left_shift_arithmetic:lsa
- 12. Parameter Settings for User Entity Instance: ALU_N_bits:dut|right_shift_arithmetic:rsa
- 13. Parameter Settings for User Entity Instance: ALU_N_bits:dut|left_shift_logic:lsl
- 14. Parameter Settings for User Entity Instance: ALU_N_bits:dut|right_shift_logic:rsl
- 15. Parameter Settings for User Entity Instance: ALU_N_bits:dut|mux_ALU:mux_F
- 16. Parameter Settings for User Entity Instance: ALU_N_bits:dut|flags:flags_F
- 17. Analysis & Elaboration Settings
- 18. Port Connectivity Checks: "ALU_N_bits:dut"
- 19. Analysis & Elaboration Messages
- 20. Analysis & Elaboration Suppressed Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxPC
+ 13. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|adderARM:adderPCPLUS4
+ 14. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|adderARM:adderPCPLUS8
+ 15. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRA1
+ 16. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRA2
+ 17. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRam
+ 18. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxALU
+ 19. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU
+ 20. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|mux_Sumador:mux_S
+ 21. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|sumador:suma_F
+ 22. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|and_A:and_F
+ 23. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|or_A:or_F
+ 24. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|xor_A:xor_F
+ 25. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|not_A:not_F
+ 26. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|left_shift_arithmetic:lsa
+ 27. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|right_shift_arithmetic:rsa
+ 28. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|left_shift_logic:lsl
+ 29. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|right_shift_logic:rsl
+ 30. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|mux_ALU:mux_F
+ 31. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|flags:flags_F
+ 32. Port Connectivity Checks: "ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRA1"
+ 33. Port Connectivity Checks: "ARMV4:ARMV4_unit|data_path:datapath_unit|adderARM:adderPCPLUS8"
+ 34. Port Connectivity Checks: "ARMV4:ARMV4_unit|data_path:datapath_unit|adderARM:adderPCPLUS4"
+ 35. Port Connectivity Checks: "ARMV4:ARMV4_unit"
+ 36. Port Connectivity Checks: "color_mux:color_mux_unit|numbers:numbers_unit2"
+ 37. Port Connectivity Checks: "color_mux:color_mux_unit|numbers:numbers_unit1"
+ 38. Port Connectivity Checks: "color_mux:color_mux_unit|pokecoin:pokecoin_unit"
+ 39. Port Connectivity Checks: "color_mux:color_mux_unit|cloud:cloud_unit3"
+ 40. Port Connectivity Checks: "color_mux:color_mux_unit|cloud:cloud_unit2"
+ 41. Port Connectivity Checks: "color_mux:color_mux_unit|cloud:cloud_unit1"
+ 42. Port Connectivity Checks: "color_mux:color_mux_unit|pikachu:pikachu_unit"
+ 43. Port Connectivity Checks: "color_mux:color_mux_unit"
+ 44. Post-Synthesis Netlist Statistics for Top Partition
+ 45. Elapsed Time Per Partition
+ 46. Analysis & Synthesis Messages
+ 47. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -48,177 +75,36 @@ refer to the applicable agreement for further details.
 
 
 
-+-----------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                              ;
-+-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Mon Nov 12 17:38:29 2018       ;
-; Quartus Prime Version         ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
-; Revision Name                 ; Pikachus_Adventure                          ;
-; Top-level Entity Name         ; tb_ALU                                      ;
-; Family                        ; Cyclone V                                   ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
-; Total registers               ; N/A until Partition Merge                   ;
-; Total pins                    ; N/A until Partition Merge                   ;
-; Total virtual pins            ; N/A until Partition Merge                   ;
-; Total block memory bits       ; N/A until Partition Merge                   ;
-; Total PLLs                    ; N/A until Partition Merge                   ;
-; Total DLLs                    ; N/A until Partition Merge                   ;
-+-------------------------------+---------------------------------------------+
-
-
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU_N_bits:dut ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; N              ; 4     ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +-------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU_N_bits:dut|mux_Sumador:mux_S ;
-+----------------+-------+------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                 ;
-+----------------+-------+------------------------------------------------------+
-; N              ; 4     ; Signed Integer                                       ;
-+----------------+-------+------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU_N_bits:dut|sumador:suma_F ;
-+----------------+-------+---------------------------------------------------+
-; Parameter Name ; Value ; Type                                              ;
-+----------------+-------+---------------------------------------------------+
-; N              ; 4     ; Signed Integer                                    ;
-+----------------+-------+---------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU_N_bits:dut|and_A:and_F ;
-+----------------+-------+------------------------------------------------+
-; Parameter Name ; Value ; Type                                           ;
-+----------------+-------+------------------------------------------------+
-; N              ; 4     ; Signed Integer                                 ;
-+----------------+-------+------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU_N_bits:dut|or_A:or_F ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; N              ; 4     ; Signed Integer                               ;
-+----------------+-------+----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU_N_bits:dut|xor_A:xor_F ;
-+----------------+-------+------------------------------------------------+
-; Parameter Name ; Value ; Type                                           ;
-+----------------+-------+------------------------------------------------+
-; N              ; 4     ; Signed Integer                                 ;
-+----------------+-------+------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU_N_bits:dut|not_A:not_F ;
-+----------------+-------+------------------------------------------------+
-; Parameter Name ; Value ; Type                                           ;
-+----------------+-------+------------------------------------------------+
-; N              ; 4     ; Signed Integer                                 ;
-+----------------+-------+------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU_N_bits:dut|left_shift_arithmetic:lsa ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; N              ; 4     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU_N_bits:dut|right_shift_arithmetic:rsa ;
-+----------------+-------+---------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                          ;
-+----------------+-------+---------------------------------------------------------------+
-; N              ; 4     ; Signed Integer                                                ;
-+----------------+-------+---------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU_N_bits:dut|left_shift_logic:lsl ;
-+----------------+-------+---------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                    ;
-+----------------+-------+---------------------------------------------------------+
-; N              ; 4     ; Signed Integer                                          ;
-+----------------+-------+---------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU_N_bits:dut|right_shift_logic:rsl ;
-+----------------+-------+----------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                     ;
-+----------------+-------+----------------------------------------------------------+
-; N              ; 4     ; Signed Integer                                           ;
-+----------------+-------+----------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU_N_bits:dut|mux_ALU:mux_F ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; N              ; 4     ; Signed Integer                                   ;
-+----------------+-------+--------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU_N_bits:dut|flags:flags_F ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; N_b            ; 4     ; Signed Integer                                   ;
-+----------------+-------+--------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Tue Nov 13 17:41:30 2018       ;
+; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
+; Revision Name                   ; Pikachus_Adventure                          ;
+; Top-level Entity Name           ; main                                        ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 1624                                        ;
+; Total pins                      ; 56                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                           ;
+; Analysis & Synthesis Settings                                                                                             ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; tb_ALU             ; Pikachus_Adventure ;
+; Top-level entity name                                                           ; main               ; Pikachus_Adventure ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -299,31 +185,686 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                             ;
++------------------------------------------------------------------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                                                                           ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                               ; Library ;
++------------------------------------------------------------------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------+---------+
+; pokecoin.sv                                                                                                ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/pokecoin.sv                                ;         ;
+; Processor/ALU/xor_A.sv                                                                                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/xor_A.sv                     ;         ;
+; Processor/ALU/sumador.sv                                                                                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/sumador.sv                   ;         ;
+; Processor/ALU/right_shift_logic.sv                                                                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/right_shift_logic.sv         ;         ;
+; Processor/ALU/right_shift_arithmetic.sv                                                                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/right_shift_arithmetic.sv    ;         ;
+; Processor/ALU/or_A.sv                                                                                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/or_A.sv                      ;         ;
+; Processor/ALU/not_A.sv                                                                                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/not_A.sv                     ;         ;
+; Processor/ALU/mux_Sumador.sv                                                                               ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/mux_Sumador.sv               ;         ;
+; Processor/ALU/mux_ALU.sv                                                                                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/mux_ALU.sv                   ;         ;
+; Processor/ALU/left_shift_logic.sv                                                                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/left_shift_logic.sv          ;         ;
+; Processor/ALU/left_shift_arithmetic.sv                                                                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/left_shift_arithmetic.sv     ;         ;
+; Processor/ALU/flags.sv                                                                                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/flags.sv                     ;         ;
+; Processor/ALU/and_A.sv                                                                                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/and_A.sv                     ;         ;
+; Processor/ALU/ALU_N_bits.sv                                                                                ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv                ;         ;
+; Processor/register_file.sv                                                                                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/register_file.sv                 ;         ;
+; Processor/REG_EN.sv                                                                                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/REG_EN.sv                        ;         ;
+; Processor/PC_REG.sv                                                                                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/PC_REG.sv                        ;         ;
+; Processor/muxARM.sv                                                                                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/muxARM.sv                        ;         ;
+; Processor/instruction_memory.sv                                                                            ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/instruction_memory.sv            ;         ;
+; Processor/extend.sv                                                                                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/extend.sv                        ;         ;
+; Processor/decoder.sv                                                                                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/decoder.sv                       ;         ;
+; Processor/data_path.sv                                                                                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv                     ;         ;
+; Processor/control_unit.sv                                                                                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/control_unit.sv                  ;         ;
+; Processor/conditions.sv                                                                                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/conditions.sv                    ;         ;
+; Processor/conditional_logic.sv                                                                             ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/conditional_logic.sv             ;         ;
+; Processor/ARMV4.sv                                                                                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ARMV4.sv                         ;         ;
+; Processor/adderARM.sv                                                                                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/adderARM.sv                      ;         ;
+; block_repeater.sv                                                                                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/block_repeater.sv                          ;         ;
+; ../../7SegmentDisplay/sevenSegmentDisplay.sv                                                               ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/7SegmentDisplay/sevenSegmentDisplay.sv                                 ;         ;
+; ../PS-2_Controller/keyboard_controller.sv                                                                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/PS-2_Controller/keyboard_controller.sv                        ;         ;
+; ../../LAB_5/VGA_Controller_FPGA/VGA_Controller.sv                                                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/LAB_5/VGA_Controller_FPGA/VGA_Controller.sv                            ;         ;
+; main.sv                                                                                                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/main.sv                                    ;         ;
+; pikachu.sv                                                                                                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/pikachu.sv                                 ;         ;
+; block.sv                                                                                                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/block.sv                                   ;         ;
+; color_mux.sv                                                                                               ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/color_mux.sv                               ;         ;
+; cloud.sv                                                                                                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/cloud.sv                                   ;         ;
+; numbers.sv                                                                                                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv                                 ;         ;
+; /users/chris/documents/tec/taller/proyecto/processor/armv4_processor/armv4/instructions/instrucciones3.mem ; yes             ; Auto-Found Unspecified File  ; /users/chris/documents/tec/taller/proyecto/processor/armv4_processor/armv4/instructions/instrucciones3.mem ;         ;
+; /users/chris/documents/tec/taller/proyecto/processor/armv4_processor/armv4/instructions/register.mem       ; yes             ; Auto-Found Unspecified File  ; /users/chris/documents/tec/taller/proyecto/processor/armv4_processor/armv4/instructions/register.mem       ;         ;
+; /users/chris/documents/tec/taller/proyecto/processor/armv4_processor/armv4/instructions/ram.mem            ; yes             ; Auto-Found Unspecified File  ; /users/chris/documents/tec/taller/proyecto/processor/armv4_processor/armv4/instructions/ram.mem            ;         ;
++------------------------------------------------------------------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                 ;
++---------------------------------------------+-----------------------------------------------+
+; Resource                                    ; Usage                                         ;
++---------------------------------------------+-----------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 1346                                          ;
+;                                             ;                                               ;
+; Combinational ALUT usage for logic          ; 1467                                          ;
+;     -- 7 input functions                    ; 8                                             ;
+;     -- 6 input functions                    ; 817                                           ;
+;     -- 5 input functions                    ; 169                                           ;
+;     -- 4 input functions                    ; 105                                           ;
+;     -- <=3 input functions                  ; 368                                           ;
+;                                             ;                                               ;
+; Dedicated logic registers                   ; 1624                                          ;
+;                                             ;                                               ;
+; I/O pins                                    ; 56                                            ;
+;                                             ;                                               ;
+; Total DSP Blocks                            ; 0                                             ;
+;                                             ;                                               ;
+; Maximum fan-out node                        ; VGA_Controller:VGA_Controller_Unit|pixel_temp ;
+; Maximum fan-out                             ; 1585                                          ;
+; Total fan-out                               ; 12299                                         ;
+; Average fan-out                             ; 3.84                                          ;
++---------------------------------------------+-----------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                           ;
++-----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                          ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                       ; Entity Name         ; Library Name ;
++-----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |main                                               ; 1467 (102)          ; 1624 (1024)               ; 0                 ; 0          ; 56   ; 0            ; |main                                                                                                                     ; main                ; work         ;
+;    |ARMV4:ARMV4_unit|                               ; 999 (0)             ; 513 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |main|ARMV4:ARMV4_unit                                                                                                    ; ARMV4               ; work         ;
+;       |control_unit:control_unit_unit|              ; 32 (0)              ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|ARMV4:ARMV4_unit|control_unit:control_unit_unit                                                                     ; control_unit        ; work         ;
+;          |conditional_logic:conditional_logic_unit| ; 29 (6)              ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|ARMV4:ARMV4_unit|control_unit:control_unit_unit|conditional_logic:conditional_logic_unit                            ; conditional_logic   ; work         ;
+;             |REG_EN:reg_2|                          ; 21 (21)             ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |main|ARMV4:ARMV4_unit|control_unit:control_unit_unit|conditional_logic:conditional_logic_unit|REG_EN:reg_2               ; REG_EN              ; work         ;
+;             |conditions:conditions_unit|            ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|ARMV4:ARMV4_unit|control_unit:control_unit_unit|conditional_logic:conditional_logic_unit|conditions:conditions_unit ; conditions          ; work         ;
+;          |decoder:decoder_unit|                     ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|ARMV4:ARMV4_unit|control_unit:control_unit_unit|decoder:decoder_unit                                                ; decoder             ; work         ;
+;       |data_path:datapath_unit|                     ; 967 (0)             ; 512 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |main|ARMV4:ARMV4_unit|data_path:datapath_unit                                                                            ; data_path           ; work         ;
+;          |ALU_N_bits:ALU|                           ; 104 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU                                                             ; ALU_N_bits          ; work         ;
+;             |mux_ALU:mux_F|                         ; 63 (63)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|mux_ALU:mux_F                                               ; mux_ALU             ; work         ;
+;             |mux_Sumador:mux_S|                     ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|mux_Sumador:mux_S                                           ; mux_Sumador         ; work         ;
+;             |sumador:suma_F|                        ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|sumador:suma_F                                              ; sumador             ; work         ;
+;          |PC_REG:PC_REG_unit|                       ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |main|ARMV4:ARMV4_unit|data_path:datapath_unit|PC_REG:PC_REG_unit                                                         ; PC_REG              ; work         ;
+;          |adderARM:adderPCPLUS4|                    ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|ARMV4:ARMV4_unit|data_path:datapath_unit|adderARM:adderPCPLUS4                                                      ; adderARM            ; work         ;
+;          |adderARM:adderPCPLUS8|                    ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|ARMV4:ARMV4_unit|data_path:datapath_unit|adderARM:adderPCPLUS8                                                      ; adderARM            ; work         ;
+;          |muxARM:muxALU|                            ; 36 (36)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxALU                                                              ; muxARM              ; work         ;
+;          |muxARM:muxRA1|                            ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRA1                                                              ; muxARM              ; work         ;
+;          |muxARM:muxRA2|                            ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRA2                                                              ; muxARM              ; work         ;
+;          |muxARM:muxRam|                            ; 352 (352)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRam                                                              ; muxARM              ; work         ;
+;          |register_file:register_file_unit|         ; 407 (407)           ; 480 (480)                 ; 0                 ; 0          ; 0    ; 0            ; |main|ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit                                           ; register_file       ; work         ;
+;    |VGA_Controller:VGA_Controller_Unit|             ; 32 (32)             ; 23 (23)                   ; 0                 ; 0          ; 0    ; 0            ; |main|VGA_Controller:VGA_Controller_Unit                                                                                  ; VGA_Controller      ; work         ;
+;    |color_mux:color_mux_unit|                       ; 276 (32)            ; 35 (4)                    ; 0                 ; 0          ; 0    ; 0            ; |main|color_mux:color_mux_unit                                                                                            ; color_mux           ; work         ;
+;       |block_repeater:block_repeater_unit|          ; 85 (68)             ; 31 (31)                   ; 0                 ; 0          ; 0    ; 0            ; |main|color_mux:color_mux_unit|block_repeater:block_repeater_unit                                                         ; block_repeater      ; work         ;
+;          |block:block_unit|                         ; 17 (17)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|color_mux:color_mux_unit|block_repeater:block_repeater_unit|block:block_unit                                        ; block               ; work         ;
+;       |numbers:numbers_unit1|                       ; 20 (20)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|color_mux:color_mux_unit|numbers:numbers_unit1                                                                      ; numbers             ; work         ;
+;       |numbers:numbers_unit2|                       ; 28 (28)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|color_mux:color_mux_unit|numbers:numbers_unit2                                                                      ; numbers             ; work         ;
+;       |pikachu:pikachu_unit|                        ; 68 (68)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|color_mux:color_mux_unit|pikachu:pikachu_unit                                                                       ; pikachu             ; work         ;
+;       |pokecoin:pokecoin_unit|                      ; 43 (43)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|color_mux:color_mux_unit|pokecoin:pokecoin_unit                                                                     ; pokecoin            ; work         ;
+;    |instruction_memory:instruction_memory_unit|     ; 25 (25)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|instruction_memory:instruction_memory_unit                                                                          ; instruction_memory  ; work         ;
+;    |keyboard_controller:keyboard_controller_F|      ; 19 (19)             ; 29 (29)                   ; 0                 ; 0          ; 0    ; 0            ; |main|keyboard_controller:keyboard_controller_F                                                                           ; keyboard_controller ; work         ;
+;    |sevenSegmentDisplay:sevenSegmentDisplay_F_1|    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|sevenSegmentDisplay:sevenSegmentDisplay_F_1                                                                         ; sevenSegmentDisplay ; work         ;
+;    |sevenSegmentDisplay:sevenSegmentDisplay_F_2|    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|sevenSegmentDisplay:sevenSegmentDisplay_F_2                                                                         ; sevenSegmentDisplay ; work         ;
++-----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                  ;
++----------------------------------------------------------------------------------------------------------------+--------------------+
+; Register name                                                                                                  ; Reason for Removal ;
++----------------------------------------------------------------------------------------------------------------+--------------------+
+; ARMV4:ARMV4_unit|control_unit:control_unit_unit|conditional_logic:conditional_logic_unit|REG_EN:reg_2|out[0]   ; Lost fanout        ;
+; ARMV4:ARMV4_unit|control_unit:control_unit_unit|conditional_logic:conditional_logic_unit|REG_EN:reg_1|out[0,1] ; Lost fanout        ;
+; Total Number of Removed Registers = 3                                                                          ;                    ;
++----------------------------------------------------------------------------------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 1624  ;
+; Number of registers using Synchronous Clear  ; 72    ;
+; Number of registers using Synchronous Load   ; 38    ;
+; Number of registers using Asynchronous Clear ; 55    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 1572  ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------+
+; Inverted Register Statistics                                                   ;
++----------------------------------------------------------------------+---------+
+; Inverted Register                                                    ; Fan out ;
++----------------------------------------------------------------------+---------+
+; keyboard_controller:keyboard_controller_F|KB_CODE[5]                 ; 2       ;
+; keyboard_controller:keyboard_controller_F|KB_CODE[6]                 ; 2       ;
+; keyboard_controller:keyboard_controller_F|KB_CODE[7]                 ; 2       ;
+; keyboard_controller:keyboard_controller_F|KB_CODE[4]                 ; 2       ;
+; keyboard_controller:keyboard_controller_F|PREVIOUS_DATA[5]           ; 1       ;
+; keyboard_controller:keyboard_controller_F|CURRENT_DATA[4]            ; 3       ;
+; keyboard_controller:keyboard_controller_F|CURRENT_DATA[5]            ; 3       ;
+; keyboard_controller:keyboard_controller_F|CURRENT_DATA[6]            ; 3       ;
+; keyboard_controller:keyboard_controller_F|CURRENT_DATA[7]            ; 3       ;
+; keyboard_controller:keyboard_controller_F|PREVIOUS_DATA[6]           ; 1       ;
+; keyboard_controller:keyboard_controller_F|PREVIOUS_DATA[7]           ; 1       ;
+; keyboard_controller:keyboard_controller_F|BIT_COUNTER[0]             ; 13      ;
+; keyboard_controller:keyboard_controller_F|PREVIOUS_DATA[4]           ; 1       ;
+; memory[4][6]                                                         ; 1       ;
+; memory[4][4]                                                         ; 1       ;
+; memory[4][5]                                                         ; 1       ;
+; memory[4][12]                                                        ; 1       ;
+; memory[4][8]                                                         ; 1       ;
+; memory[4][9]                                                         ; 1       ;
+; memory[4][10]                                                        ; 1       ;
+; color_mux:color_mux_unit|block_repeater:block_repeater_unit|pos_y[8] ; 1       ;
+; color_mux:color_mux_unit|block_repeater:block_repeater_unit|pos_y[6] ; 1       ;
+; color_mux:color_mux_unit|block_repeater:block_repeater_unit|pos_y[5] ; 1       ;
+; Total number of inverted registers = 23                              ;         ;
++----------------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |main|color_mux:color_mux_unit|block_repeater:block_repeater_unit|pos_y[9]           ;
+; 3:1                ; 24 bits   ; 48 LEs        ; 0 LEs                ; 48 LEs                 ; Yes        ; |main|memory[1][8]                                                                   ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |main|color_mux:color_mux_unit|block_repeater:block_repeater_unit|pos_x[6]           ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |main|keyboard_controller:keyboard_controller_F|BIT_COUNTER[2]                       ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |main|memory[1][7]                                                                   ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |main|color_mux:color_mux_unit|block_repeater:block_repeater_unit|pos_y[5]           ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |main|color_mux:color_mux_unit|r                                                     ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |main|color_mux:color_mux_unit|pikachu:pikachu_unit|r                                ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |main|r                                                                              ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |main|ARMV4:ARMV4_unit|control_unit:control_unit_unit|decoder:decoder_unit|RegSrc[1] ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |main|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|mux_ALU:mux_F|Mux3     ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |main|ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxALU|out[18]                 ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |main|ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxALU|out[0]                  ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |main|ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxALU|out[7]                  ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |main|color_mux:color_mux_unit|g                                                     ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |main|b                                                                              ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |main|ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxALU|out[8]                  ;
+; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; No         ; |main|ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRam|out[12]                 ;
+; 20:1               ; 2 bits    ; 26 LEs        ; 12 LEs               ; 14 LEs                 ; No         ; |main|r                                                                              ;
+; 21:1               ; 2 bits    ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; No         ; |main|r                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxPC ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|adderARM:adderPCPLUS4 ;
++----------------+-------+------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|adderARM:adderPCPLUS8 ;
++----------------+-------+------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRA1 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; N              ; 4     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRA2 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; N              ; 4     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRam ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxALU ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|mux_Sumador:mux_S ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|sumador:suma_F ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|and_A:and_F ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|or_A:or_F ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|xor_A:xor_F ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|not_A:not_F ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|left_shift_arithmetic:lsa ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|right_shift_arithmetic:rsa ;
++----------------+-------+--------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                   ;
++----------------+-------+--------------------------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                                         ;
++----------------+-------+--------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|left_shift_logic:lsl ;
++----------------+-------+--------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                                   ;
++----------------+-------+--------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +----------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALU_N_bits:dut"                                                                                 ;
-+------------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port             ; Type   ; Severity ; Details                                                                             ;
-+------------------+--------+----------+-------------------------------------------------------------------------------------+
-; A                ; Input  ; Info     ; Stuck at GND                                                                        ;
-; B[1..0]          ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; B[3..2]          ; Input  ; Info     ; Stuck at GND                                                                        ;
-; ALUControl[3..1] ; Input  ; Info     ; Stuck at GND                                                                        ;
-; ALUControl[0]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; flags            ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; RESULT           ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|right_shift_logic:rsl ;
++----------------+-------+---------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                              ;
++----------------+-------+---------------------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                                    ;
++----------------+-------+---------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|mux_ALU:mux_F ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|flags:flags_F ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; N_b            ; 32    ; Signed Integer                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRA1" ;
++------+-------+----------+----------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                  ;
++------+-------+----------+----------------------------------------------------------+
+; B    ; Input ; Info     ; Stuck at VCC                                             ;
++------+-------+----------+----------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ARMV4:ARMV4_unit|data_path:datapath_unit|adderARM:adderPCPLUS8" ;
++----------+-------+----------+--------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                      ;
++----------+-------+----------+--------------------------------------------------------------+
+; B[31..3] ; Input ; Info     ; Stuck at GND                                                 ;
+; B[1..0]  ; Input ; Info     ; Stuck at GND                                                 ;
+; B[2]     ; Input ; Info     ; Stuck at VCC                                                 ;
++----------+-------+----------+--------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ARMV4:ARMV4_unit|data_path:datapath_unit|adderARM:adderPCPLUS4" ;
++----------+-------+----------+--------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                      ;
++----------+-------+----------+--------------------------------------------------------------+
+; B[31..3] ; Input ; Info     ; Stuck at GND                                                 ;
+; B[1..0]  ; Input ; Info     ; Stuck at GND                                                 ;
+; B[2]     ; Input ; Info     ; Stuck at VCC                                                 ;
++----------+-------+----------+--------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ARMV4:ARMV4_unit"                                                                              ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port            ; Type   ; Severity ; Details                                                                             ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; ALUResult[1..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "color_mux:color_mux_unit|numbers:numbers_unit2"                                                                                                                                           ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type  ; Severity ; Details                                                                                                                                                                             ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; pos_x       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; pos_x[6..5] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_x[3..2] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_x[8..7] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_x[1..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_x[9]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_x[4]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; pos_y[9..5] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y[1..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y[4]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_y[3]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y[2]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "color_mux:color_mux_unit|numbers:numbers_unit1"                                                                                                                                           ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type  ; Severity ; Details                                                                                                                                                                             ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; pos_x       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; pos_x[4..3] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_x[8..7] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_x[2..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_x[9]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_x[6]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_x[5]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; pos_y[9..5] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y[1..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y[4]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_y[3]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y[2]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "color_mux:color_mux_unit|pokecoin:pokecoin_unit"                                                                                                                                          ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type  ; Severity ; Details                                                                                                                                                                             ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; pos_x       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; pos_x[8..4] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_x[1..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_x[9]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_x[3]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_x[2]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_y       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; pos_y[5..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y[9]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y[8]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_y[7]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y[6]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "color_mux:color_mux_unit|cloud:cloud_unit3"                                                                                                                                               ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type  ; Severity ; Details                                                                                                                                                                             ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; pos_x       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; pos_x[2..1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_x[7..5] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_x[9]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_x[8]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_x[4]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_x[3]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_x[0]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; pos_y[5..4] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_y[9..6] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y[3..2] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y[1]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_y[0]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "color_mux:color_mux_unit|cloud:cloud_unit2"                                                                                                                                               ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type  ; Severity ; Details                                                                                                                                                                             ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; pos_x       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; pos_x[9..8] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_x[4..3] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_x[1..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_x[7]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_x[6]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_x[5]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_x[2]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_y       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; pos_y[6..3] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_y[9..7] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y[2..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "color_mux:color_mux_unit|cloud:cloud_unit1"                                                                                                                                               ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type  ; Severity ; Details                                                                                                                                                                             ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; pos_x       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; pos_x[5..4] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_x[9..6] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_x[3..2] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_x[1]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_x[0]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; pos_y[5..4] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_y[9..6] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y[3..2] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y[1]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_y[0]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Port Connectivity Checks: "color_mux:color_mux_unit|pikachu:pikachu_unit" ;
++-------------+-------+----------+------------------------------------------+
+; Port        ; Type  ; Severity ; Details                                  ;
++-------------+-------+----------+------------------------------------------+
+; pos_x[5..4] ; Input ; Info     ; Stuck at VCC                             ;
+; pos_x[7..6] ; Input ; Info     ; Stuck at GND                             ;
+; pos_x[3..0] ; Input ; Info     ; Stuck at GND                             ;
+; pos_x[9]    ; Input ; Info     ; Stuck at GND                             ;
+; pos_x[8]    ; Input ; Info     ; Stuck at VCC                             ;
+; pos_y[3..0] ; Input ; Info     ; Stuck at GND                             ;
+; pos_y[9]    ; Input ; Info     ; Stuck at GND                             ;
+; pos_y[8]    ; Input ; Info     ; Stuck at VCC                             ;
+; pos_y[7]    ; Input ; Info     ; Stuck at GND                             ;
+; pos_y[6]    ; Input ; Info     ; Stuck at VCC                             ;
+; pos_y[5]    ; Input ; Info     ; Stuck at GND                             ;
+; pos_y[4]    ; Input ; Info     ; Stuck at VCC                             ;
++-------------+-------+----------+------------------------------------------+
+
+
++------------------------------------------------------+
+; Port Connectivity Checks: "color_mux:color_mux_unit" ;
++---------------+-------+----------+-------------------+
+; Port          ; Type  ; Severity ; Details           ;
++---------------+-------+----------+-------------------+
+; en_C          ; Input ; Info     ; Stuck at VCC      ;
+; number1       ; Input ; Info     ; Stuck at GND      ;
+; number2[3..1] ; Input ; Info     ; Stuck at GND      ;
+; number2[0]    ; Input ; Info     ; Stuck at VCC      ;
++---------------+-------+----------+-------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 1624                        ;
+;     CLR               ; 3                           ;
+;     CLR SLD           ; 30                          ;
+;     ENA               ; 1498                        ;
+;     ENA CLR           ; 2                           ;
+;     ENA CLR SCLR      ; 20                          ;
+;     ENA SCLR          ; 44                          ;
+;     ENA SCLR SLD      ; 8                           ;
+;     plain             ; 19                          ;
+; arriav_lcell_comb     ; 1472                        ;
+;     arith             ; 146                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 120                         ;
+;         2 data inputs ; 18                          ;
+;         3 data inputs ; 4                           ;
+;         4 data inputs ; 2                           ;
+;         5 data inputs ; 1                           ;
+;     extend            ; 8                           ;
+;         7 data inputs ; 8                           ;
+;     normal            ; 1265                        ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 15                          ;
+;         2 data inputs ; 30                          ;
+;         3 data inputs ; 152                         ;
+;         4 data inputs ; 81                          ;
+;         5 data inputs ; 168                         ;
+;         6 data inputs ; 817                         ;
+;     shared            ; 53                          ;
+;         0 data inputs ; 1                           ;
+;         2 data inputs ; 17                          ;
+;         3 data inputs ; 13                          ;
+;         4 data inputs ; 22                          ;
+; boundary_port         ; 56                          ;
+;                       ;                             ;
+; Max LUT depth         ; 11.10                       ;
+; Average LUT depth     ; 6.58                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:07     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
+Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Mon Nov 12 17:38:11 2018
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Pikachus_Adventure -c Pikachus_Adventure --analysis_and_elaboration
+    Info: Processing started: Tue Nov 13 17:41:00 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Pikachus_Adventure -c Pikachus_Adventure
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file pokecoin.sv
+    Info (12023): Found entity 1: pokecoin File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/pokecoin.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file processor/alu/xor_a.sv
     Info (12023): Found entity 1: xor_A File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/xor_A.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file processor/alu/tb_alu.sv
@@ -408,38 +949,151 @@ Info (12021): Found 1 design units, including 1 entities, in source file cloud.s
     Info (12023): Found entity 1: cloud File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/cloud.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tb_assembly.sv
     Info (12023): Found entity 1: tb_assembly File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/tb_assembly.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file coin.sv
-    Info (12023): Found entity 1: coin File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/coin.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file numbers.sv
     Info (12023): Found entity 1: numbers File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at main.sv(21): created implicit net for "video_on" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/main.sv Line: 21
 Warning (10236): Verilog HDL Implicit Net warning at main.sv(29): created implicit net for "MemWrite" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/main.sv Line: 29
-Warning (10236): Verilog HDL Implicit Net warning at tb_assembly.sv(20): created implicit net for "offset_ARM" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/tb_assembly.sv Line: 20
-Info (12127): Elaborating entity "tb_ALU" for the top level hierarchy
-Info (12128): Elaborating entity "ALU_N_bits" for hierarchy "ALU_N_bits:dut" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/tb_ALU.sv Line: 6
-Info (12128): Elaborating entity "mux_Sumador" for hierarchy "ALU_N_bits:dut|mux_Sumador:mux_S" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv Line: 25
-Info (12128): Elaborating entity "sumador" for hierarchy "ALU_N_bits:dut|sumador:suma_F" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv Line: 26
-Info (12128): Elaborating entity "and_A" for hierarchy "ALU_N_bits:dut|and_A:and_F" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv Line: 27
-Info (12128): Elaborating entity "or_A" for hierarchy "ALU_N_bits:dut|or_A:or_F" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv Line: 28
-Info (12128): Elaborating entity "xor_A" for hierarchy "ALU_N_bits:dut|xor_A:xor_F" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv Line: 29
-Info (12128): Elaborating entity "not_A" for hierarchy "ALU_N_bits:dut|not_A:not_F" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv Line: 30
-Info (12128): Elaborating entity "left_shift_arithmetic" for hierarchy "ALU_N_bits:dut|left_shift_arithmetic:lsa" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv Line: 31
-Info (12128): Elaborating entity "right_shift_arithmetic" for hierarchy "ALU_N_bits:dut|right_shift_arithmetic:rsa" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv Line: 32
-Info (12128): Elaborating entity "left_shift_logic" for hierarchy "ALU_N_bits:dut|left_shift_logic:lsl" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv Line: 33
-Info (12128): Elaborating entity "right_shift_logic" for hierarchy "ALU_N_bits:dut|right_shift_logic:rsl" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv Line: 34
-Info (12128): Elaborating entity "mux_ALU" for hierarchy "ALU_N_bits:dut|mux_ALU:mux_F" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv Line: 37
-Info (12128): Elaborating entity "flags" for hierarchy "ALU_N_bits:dut|flags:flags_F" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv Line: 40
+Info (12127): Elaborating entity "main" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at main.sv(17): truncated value with size 32 to match size of target (1) File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/main.sv Line: 17
+Warning (10230): Verilog HDL assignment warning at main.sv(18): truncated value with size 32 to match size of target (1) File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/main.sv Line: 18
+Warning (10230): Verilog HDL assignment warning at main.sv(43): truncated value with size 32 to match size of target (10) File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/main.sv Line: 43
+Warning (10230): Verilog HDL assignment warning at main.sv(44): truncated value with size 32 to match size of target (1) File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/main.sv Line: 44
+Warning (10230): Verilog HDL assignment warning at main.sv(45): truncated value with size 32 to match size of target (1) File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/main.sv Line: 45
+Warning (10034): Output port "led_x[3..2]" at main.sv(6) has no driver File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/main.sv Line: 6
+Warning (10034): Output port "led_Y[3..1]" at main.sv(6) has no driver File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/main.sv Line: 6
+Info (12128): Elaborating entity "keyboard_controller" for hierarchy "keyboard_controller:keyboard_controller_F" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/main.sv Line: 13
+Warning (10230): Verilog HDL assignment warning at keyboard_controller.sv(38): truncated value with size 32 to match size of target (4) File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/PS-2_Controller/keyboard_controller.sv Line: 38
+Info (12128): Elaborating entity "sevenSegmentDisplay" for hierarchy "sevenSegmentDisplay:sevenSegmentDisplay_F_1" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/main.sv Line: 14
+Info (12128): Elaborating entity "VGA_Controller" for hierarchy "VGA_Controller:VGA_Controller_Unit" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/main.sv Line: 21
+Warning (10230): Verilog HDL assignment warning at VGA_Controller.sv(61): truncated value with size 32 to match size of target (10) File: C:/Users/Chris/Documents/TEC/Taller/LAB_5/VGA_Controller_FPGA/VGA_Controller.sv Line: 61
+Warning (10230): Verilog HDL assignment warning at VGA_Controller.sv(65): truncated value with size 32 to match size of target (10) File: C:/Users/Chris/Documents/TEC/Taller/LAB_5/VGA_Controller_FPGA/VGA_Controller.sv Line: 65
+Info (12128): Elaborating entity "color_mux" for hierarchy "color_mux:color_mux_unit" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/main.sv Line: 24
+Info (12128): Elaborating entity "pikachu" for hierarchy "color_mux:color_mux_unit|pikachu:pikachu_unit" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/color_mux.sv Line: 44
+Warning (10030): Net "pikachu_Par.data_a" at pikachu.sv(22) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/pikachu.sv Line: 22
+Warning (10030): Net "pikachu_Par.waddr_a" at pikachu.sv(22) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/pikachu.sv Line: 22
+Warning (10030): Net "pikachu_Impar.data_a" at pikachu.sv(40) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/pikachu.sv Line: 40
+Warning (10030): Net "pikachu_Impar.waddr_a" at pikachu.sv(40) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/pikachu.sv Line: 40
+Warning (10030): Net "pikachu_Par.we_a" at pikachu.sv(22) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/pikachu.sv Line: 22
+Warning (10030): Net "pikachu_Impar.we_a" at pikachu.sv(40) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/pikachu.sv Line: 40
+Info (12128): Elaborating entity "block_repeater" for hierarchy "color_mux:color_mux_unit|block_repeater:block_repeater_unit" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/color_mux.sv Line: 45
+Warning (10036): Verilog HDL or VHDL warning at block_repeater.sv(7): object "counter" assigned a value but never read File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/block_repeater.sv Line: 7
+Warning (10230): Verilog HDL assignment warning at block_repeater.sv(14): truncated value with size 32 to match size of target (10) File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/block_repeater.sv Line: 14
+Info (12128): Elaborating entity "block" for hierarchy "color_mux:color_mux_unit|block_repeater:block_repeater_unit|block:block_unit" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/block_repeater.sv Line: 12
+Warning (10030): Net "pikachu_Par.data_a" at block.sv(38) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/block.sv Line: 38
+Warning (10030): Net "pikachu_Par.waddr_a" at block.sv(38) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/block.sv Line: 38
+Warning (10030): Net "pikachu_Par.we_a" at block.sv(38) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/block.sv Line: 38
+Info (12128): Elaborating entity "cloud" for hierarchy "color_mux:color_mux_unit|cloud:cloud_unit1" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/color_mux.sv Line: 46
+Warning (10030): Net "cloud_static.data_a" at cloud.sv(70) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/cloud.sv Line: 70
+Warning (10030): Net "cloud_static.waddr_a" at cloud.sv(70) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/cloud.sv Line: 70
+Warning (10030): Net "cloud_static.we_a" at cloud.sv(70) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/cloud.sv Line: 70
+Info (12128): Elaborating entity "pokecoin" for hierarchy "color_mux:color_mux_unit|pokecoin:pokecoin_unit" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/color_mux.sv Line: 49
+Warning (10199): Verilog HDL Case Statement warning at pokecoin.sv(48): case item expression never matches the case expression File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/pokecoin.sv Line: 48
+Warning (10030): Net "pokecoin_static.data_a" at pokecoin.sv(38) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/pokecoin.sv Line: 38
+Warning (10030): Net "pokecoin_static.waddr_a" at pokecoin.sv(38) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/pokecoin.sv Line: 38
+Warning (10030): Net "pokecoin_static.we_a" at pokecoin.sv(38) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/pokecoin.sv Line: 38
+Info (12128): Elaborating entity "numbers" for hierarchy "color_mux:color_mux_unit|numbers:numbers_unit1" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/color_mux.sv Line: 50
+Warning (10030): Net "cero.waddr_a" at numbers.sv(41) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 41
+Warning (10030): Net "uno.waddr_a" at numbers.sv(76) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 76
+Warning (10030): Net "dos.waddr_a" at numbers.sv(111) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 111
+Warning (10030): Net "tres.waddr_a" at numbers.sv(146) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 146
+Warning (10030): Net "cuatro.waddr_a" at numbers.sv(181) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 181
+Warning (10030): Net "cinco.waddr_a" at numbers.sv(216) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 216
+Warning (10030): Net "seis.waddr_a" at numbers.sv(251) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 251
+Warning (10030): Net "siete.waddr_a" at numbers.sv(286) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 286
+Warning (10030): Net "ocho.waddr_a" at numbers.sv(321) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 321
+Warning (10030): Net "nueve.waddr_a" at numbers.sv(356) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 356
+Warning (10030): Net "cero.data_a" at numbers.sv(41) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 41
+Warning (10030): Net "cero.we_a" at numbers.sv(41) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 41
+Warning (10030): Net "uno.data_a" at numbers.sv(76) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 76
+Warning (10030): Net "uno.we_a" at numbers.sv(76) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 76
+Warning (10030): Net "dos.data_a" at numbers.sv(111) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 111
+Warning (10030): Net "dos.we_a" at numbers.sv(111) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 111
+Warning (10030): Net "tres.data_a" at numbers.sv(146) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 146
+Warning (10030): Net "tres.we_a" at numbers.sv(146) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 146
+Warning (10030): Net "cuatro.data_a" at numbers.sv(181) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 181
+Warning (10030): Net "cuatro.we_a" at numbers.sv(181) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 181
+Warning (10030): Net "cinco.data_a" at numbers.sv(216) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 216
+Warning (10030): Net "cinco.we_a" at numbers.sv(216) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 216
+Warning (10030): Net "seis.data_a" at numbers.sv(251) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 251
+Warning (10030): Net "seis.we_a" at numbers.sv(251) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 251
+Warning (10030): Net "siete.data_a" at numbers.sv(286) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 286
+Warning (10030): Net "siete.we_a" at numbers.sv(286) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 286
+Warning (10030): Net "ocho.data_a" at numbers.sv(321) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 321
+Warning (10030): Net "ocho.we_a" at numbers.sv(321) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 321
+Warning (10030): Net "nueve.data_a" at numbers.sv(356) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 356
+Warning (10030): Net "nueve.we_a" at numbers.sv(356) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 356
+Info (12128): Elaborating entity "instruction_memory" for hierarchy "instruction_memory:instruction_memory_unit" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/main.sv Line: 28
+Warning (10030): Net "memory.data_a" at instruction_memory.sv(5) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/instruction_memory.sv Line: 5
+Warning (10030): Net "memory.waddr_a" at instruction_memory.sv(5) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/instruction_memory.sv Line: 5
+Warning (10030): Net "memory.we_a" at instruction_memory.sv(5) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/instruction_memory.sv Line: 5
+Info (12128): Elaborating entity "ARMV4" for hierarchy "ARMV4:ARMV4_unit" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/main.sv Line: 29
+Info (12128): Elaborating entity "control_unit" for hierarchy "ARMV4:ARMV4_unit|control_unit:control_unit_unit" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ARMV4.sv Line: 8
+Info (12128): Elaborating entity "decoder" for hierarchy "ARMV4:ARMV4_unit|control_unit:control_unit_unit|decoder:decoder_unit" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/control_unit.sv Line: 14
+Info (12128): Elaborating entity "conditional_logic" for hierarchy "ARMV4:ARMV4_unit|control_unit:control_unit_unit|conditional_logic:conditional_logic_unit" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/control_unit.sv Line: 15
+Info (12128): Elaborating entity "REG_EN" for hierarchy "ARMV4:ARMV4_unit|control_unit:control_unit_unit|conditional_logic:conditional_logic_unit|REG_EN:reg_1" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/conditional_logic.sv Line: 10
+Info (12128): Elaborating entity "conditions" for hierarchy "ARMV4:ARMV4_unit|control_unit:control_unit_unit|conditional_logic:conditional_logic_unit|conditions:conditions_unit" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/conditional_logic.sv Line: 13
+Info (12128): Elaborating entity "data_path" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ARMV4.sv Line: 9
+Info (12128): Elaborating entity "muxARM" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxPC" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv Line: 26
+Info (12128): Elaborating entity "PC_REG" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|PC_REG:PC_REG_unit" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv Line: 27
+Info (12128): Elaborating entity "adderARM" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|adderARM:adderPCPLUS4" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv Line: 29
+Info (12128): Elaborating entity "muxARM" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRA1" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv Line: 33
+Info (12128): Elaborating entity "register_file" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv Line: 44
+Info (12128): Elaborating entity "extend" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|extend:extend_unit" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv Line: 51
+Info (12128): Elaborating entity "ALU_N_bits" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv Line: 59
+Info (12128): Elaborating entity "mux_Sumador" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|mux_Sumador:mux_S" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv Line: 25
+Info (12128): Elaborating entity "sumador" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|sumador:suma_F" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv Line: 26
+Info (12128): Elaborating entity "and_A" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|and_A:and_F" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv Line: 27
+Info (12128): Elaborating entity "or_A" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|or_A:or_F" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv Line: 28
+Info (12128): Elaborating entity "xor_A" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|xor_A:xor_F" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv Line: 29
+Info (12128): Elaborating entity "not_A" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|not_A:not_F" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv Line: 30
+Info (12128): Elaborating entity "left_shift_arithmetic" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|left_shift_arithmetic:lsa" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv Line: 31
+Info (12128): Elaborating entity "right_shift_arithmetic" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|right_shift_arithmetic:rsa" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv Line: 32
+Info (12128): Elaborating entity "left_shift_logic" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|left_shift_logic:lsl" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv Line: 33
+Info (12128): Elaborating entity "right_shift_logic" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|right_shift_logic:rsl" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv Line: 34
+Info (12128): Elaborating entity "mux_ALU" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|mux_ALU:mux_F" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv Line: 37
+Info (12128): Elaborating entity "flags" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|flags:flags_F" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv Line: 40
+Info (276014): Found 11 instances of uninferred RAM logic
+    Info (276007): RAM logic "ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory" is uninferred due to asynchronous read logic File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/register_file.sv Line: 8
+    Info (276004): RAM logic "instruction_memory:instruction_memory_unit|memory" is uninferred due to inappropriate RAM size File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/instruction_memory.sv Line: 5
+    Info (276007): RAM logic "color_mux:color_mux_unit|numbers:numbers_unit2|uno" is uninferred due to asynchronous read logic File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 76
+    Info (276007): RAM logic "color_mux:color_mux_unit|numbers:numbers_unit1|cero" is uninferred due to asynchronous read logic File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/numbers.sv Line: 41
+    Info (276007): RAM logic "color_mux:color_mux_unit|pokecoin:pokecoin_unit|pokecoin_static" is uninferred due to asynchronous read logic File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/pokecoin.sv Line: 38
+    Info (276007): RAM logic "color_mux:color_mux_unit|cloud:cloud_unit3|cloud_static" is uninferred due to asynchronous read logic File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/cloud.sv Line: 70
+    Info (276007): RAM logic "color_mux:color_mux_unit|cloud:cloud_unit2|cloud_static" is uninferred due to asynchronous read logic File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/cloud.sv Line: 70
+    Info (276007): RAM logic "color_mux:color_mux_unit|cloud:cloud_unit1|cloud_static" is uninferred due to asynchronous read logic File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/cloud.sv Line: 70
+    Info (276007): RAM logic "color_mux:color_mux_unit|block_repeater:block_repeater_unit|block:block_unit|pikachu_Par" is uninferred due to asynchronous read logic File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/block.sv Line: 38
+    Info (276007): RAM logic "color_mux:color_mux_unit|pikachu:pikachu_unit|pikachu_Par" is uninferred due to asynchronous read logic File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/pikachu.sv Line: 22
+    Info (276007): RAM logic "color_mux:color_mux_unit|pikachu:pikachu_unit|pikachu_Impar" is uninferred due to asynchronous read logic File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/pikachu.sv Line: 40
+Critical Warning (127005): Memory depth (16) in the design file differs from memory depth (15) in the Memory Initialization File "C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/db/Pikachus_Adventure.ram0_register_file_87c776fc.hdl.mif" -- setting initial value for remaining addresses to 0
+Warning (12241): 6 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "n_sync" is stuck at GND File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/main.sv Line: 3
+    Warning (13410): Pin "n_blanc" is stuck at VCC File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/main.sv Line: 3
+    Warning (13410): Pin "b[4]" is stuck at GND File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/main.sv Line: 4
+    Warning (13410): Pin "led_x[2]" is stuck at GND File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/main.sv Line: 6
+    Warning (13410): Pin "led_x[3]" is stuck at GND File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/main.sv Line: 6
+    Warning (13410): Pin "led_Y[1]" is stuck at GND File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/main.sv Line: 6
+    Warning (13410): Pin "led_Y[2]" is stuck at GND File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/main.sv Line: 6
+    Warning (13410): Pin "led_Y[3]" is stuck at GND File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/main.sv Line: 6
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 3 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/output_files/Pikachus_Adventure.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4800 megabytes
-    Info: Processing ended: Mon Nov 12 17:38:29 2018
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:40
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 3089 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 52 output pins
+    Info (21061): Implemented 3033 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 75 warnings
+    Info: Peak virtual memory: 4865 megabytes
+    Info: Processing ended: Tue Nov 13 17:41:30 2018
+    Info: Elapsed time: 00:00:30
+    Info: Total CPU time (on all processors): 00:00:54
 
 
-+--------------------------------------------+
-; Analysis & Elaboration Suppressed Messages ;
-+--------------------------------------------+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
 The suppressed messages can be found in C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/output_files/Pikachus_Adventure.map.smsg.
 
 

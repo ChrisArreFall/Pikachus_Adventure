@@ -12,150 +12,293 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU {C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/xor_A.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:44:35 on Nov 12,2018
+# Start time: 03:22:13 on Nov 13,2018
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU" C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/xor_A.sv 
 # -- Compiling module xor_A
 # 
 # Top level modules:
 # 	xor_A
-# End time: 17:44:35 on Nov 12,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU {C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/tb_ALU.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:44:35 on Nov 12,2018
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU" C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/tb_ALU.sv 
-# -- Compiling module tb_ALU
-# 
-# Top level modules:
-# 	tb_ALU
-# End time: 17:44:36 on Nov 12,2018, Elapsed time: 0:00:01
+# End time: 03:22:13 on Nov 13,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU {C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/sumador.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:44:36 on Nov 12,2018
+# Start time: 03:22:13 on Nov 13,2018
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU" C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/sumador.sv 
 # -- Compiling module sumador
 # 
 # Top level modules:
 # 	sumador
-# End time: 17:44:36 on Nov 12,2018, Elapsed time: 0:00:00
+# End time: 03:22:13 on Nov 13,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU {C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/right_shift_logic.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:44:36 on Nov 12,2018
+# Start time: 03:22:14 on Nov 13,2018
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU" C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/right_shift_logic.sv 
 # -- Compiling module right_shift_logic
 # 
 # Top level modules:
 # 	right_shift_logic
-# End time: 17:44:36 on Nov 12,2018, Elapsed time: 0:00:00
+# End time: 03:22:14 on Nov 13,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU {C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/right_shift_arithmetic.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:44:36 on Nov 12,2018
+# Start time: 03:22:14 on Nov 13,2018
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU" C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/right_shift_arithmetic.sv 
 # -- Compiling module right_shift_arithmetic
 # 
 # Top level modules:
 # 	right_shift_arithmetic
-# End time: 17:44:36 on Nov 12,2018, Elapsed time: 0:00:00
+# End time: 03:22:14 on Nov 13,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU {C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/or_A.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:44:36 on Nov 12,2018
+# Start time: 03:22:14 on Nov 13,2018
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU" C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/or_A.sv 
 # -- Compiling module or_A
 # 
 # Top level modules:
 # 	or_A
-# End time: 17:44:36 on Nov 12,2018, Elapsed time: 0:00:00
+# End time: 03:22:14 on Nov 13,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU {C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/not_A.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:44:36 on Nov 12,2018
+# Start time: 03:22:14 on Nov 13,2018
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU" C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/not_A.sv 
 # -- Compiling module not_A
 # 
 # Top level modules:
 # 	not_A
-# End time: 17:44:36 on Nov 12,2018, Elapsed time: 0:00:00
+# End time: 03:22:14 on Nov 13,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU {C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/mux_Sumador.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:44:36 on Nov 12,2018
+# Start time: 03:22:14 on Nov 13,2018
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU" C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/mux_Sumador.sv 
 # -- Compiling module mux_Sumador
 # 
 # Top level modules:
 # 	mux_Sumador
-# End time: 17:44:36 on Nov 12,2018, Elapsed time: 0:00:00
+# End time: 03:22:14 on Nov 13,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU {C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/mux_ALU.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:44:36 on Nov 12,2018
+# Start time: 03:22:14 on Nov 13,2018
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU" C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/mux_ALU.sv 
 # -- Compiling module mux_ALU
 # 
 # Top level modules:
 # 	mux_ALU
-# End time: 17:44:36 on Nov 12,2018, Elapsed time: 0:00:00
+# End time: 03:22:14 on Nov 13,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU {C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/left_shift_logic.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:44:36 on Nov 12,2018
+# Start time: 03:22:14 on Nov 13,2018
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU" C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/left_shift_logic.sv 
 # -- Compiling module left_shift_logic
 # 
 # Top level modules:
 # 	left_shift_logic
-# End time: 17:44:36 on Nov 12,2018, Elapsed time: 0:00:00
+# End time: 03:22:14 on Nov 13,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU {C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/left_shift_arithmetic.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:44:37 on Nov 12,2018
+# Start time: 03:22:15 on Nov 13,2018
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU" C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/left_shift_arithmetic.sv 
 # -- Compiling module left_shift_arithmetic
 # 
 # Top level modules:
 # 	left_shift_arithmetic
-# End time: 17:44:37 on Nov 12,2018, Elapsed time: 0:00:00
+# End time: 03:22:15 on Nov 13,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU {C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/flags.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:44:37 on Nov 12,2018
+# Start time: 03:22:15 on Nov 13,2018
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU" C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/flags.sv 
 # -- Compiling module flags
 # 
 # Top level modules:
 # 	flags
-# End time: 17:44:37 on Nov 12,2018, Elapsed time: 0:00:00
+# End time: 03:22:15 on Nov 13,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU {C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/and_A.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:44:37 on Nov 12,2018
+# Start time: 03:22:15 on Nov 13,2018
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU" C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/and_A.sv 
 # -- Compiling module and_A
 # 
 # Top level modules:
 # 	and_A
-# End time: 17:44:37 on Nov 12,2018, Elapsed time: 0:00:00
+# End time: 03:22:15 on Nov 13,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU {C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:44:37 on Nov 12,2018
+# Start time: 03:22:15 on Nov 13,2018
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU" C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv 
 # -- Compiling module ALU_N_bits
 # 
 # Top level modules:
 # 	ALU_N_bits
-# End time: 17:44:37 on Nov 12,2018, Elapsed time: 0:00:00
+# End time: 03:22:15 on Nov 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor {C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/REG_EN.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:22:15 on Nov 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor" C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/REG_EN.sv 
+# -- Compiling module REG_EN
+# 
+# Top level modules:
+# 	REG_EN
+# End time: 03:22:15 on Nov 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor {C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/PC_REG.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:22:15 on Nov 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor" C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/PC_REG.sv 
+# -- Compiling module PC_REG
+# 
+# Top level modules:
+# 	PC_REG
+# End time: 03:22:15 on Nov 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor {C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/muxARM.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:22:15 on Nov 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor" C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/muxARM.sv 
+# -- Compiling module muxARM
+# 
+# Top level modules:
+# 	muxARM
+# End time: 03:22:16 on Nov 13,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor {C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/extend.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:22:16 on Nov 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor" C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/extend.sv 
+# -- Compiling module extend
+# 
+# Top level modules:
+# 	extend
+# End time: 03:22:16 on Nov 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor {C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/decoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:22:16 on Nov 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor" C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/decoder.sv 
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# End time: 03:22:16 on Nov 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor {C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:22:16 on Nov 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor" C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv 
+# -- Compiling module data_path
+# 
+# Top level modules:
+# 	data_path
+# End time: 03:22:16 on Nov 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor {C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/control_unit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:22:16 on Nov 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor" C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/control_unit.sv 
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# End time: 03:22:16 on Nov 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor {C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/conditions.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:22:16 on Nov 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor" C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/conditions.sv 
+# -- Compiling module conditions
+# 
+# Top level modules:
+# 	conditions
+# End time: 03:22:16 on Nov 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor {C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/conditional_logic.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:22:17 on Nov 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor" C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/conditional_logic.sv 
+# -- Compiling module conditional_logic
+# 
+# Top level modules:
+# 	conditional_logic
+# End time: 03:22:17 on Nov 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor {C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ARMV4.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:22:17 on Nov 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor" C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ARMV4.sv 
+# -- Compiling module ARMV4
+# 
+# Top level modules:
+# 	ARMV4
+# End time: 03:22:17 on Nov 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor {C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/adderARM.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:22:17 on Nov 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor" C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/adderARM.sv 
+# -- Compiling module adderARM
+# 
+# Top level modules:
+# 	adderARM
+# End time: 03:22:17 on Nov 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor {C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/register_file.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:22:17 on Nov 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor" C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/register_file.sv 
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+# End time: 03:22:17 on Nov 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor {C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/instruction_memory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:22:17 on Nov 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor" C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/instruction_memory.sv 
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 03:22:17 on Nov 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure {C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/tb_assembly.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:22:17 on Nov 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure" C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/tb_assembly.sv 
+# -- Compiling module tb_assembly
+# 
+# Top level modules:
+# 	tb_assembly
+# End time: 03:22:18 on Nov 13,2018, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
-vsim work.tb_ALU
-# vsim work.tb_ALU 
-# Start time: 17:46:01 on Nov 12,2018
+vsim work.tb_assembly
+# vsim work.tb_assembly 
+# Start time: 03:22:31 on Nov 13,2018
 # Loading sv_std.std
-# Loading work.tb_ALU
+# Loading work.tb_assembly
+# Loading work.instruction_memory
+# Loading work.ARMV4
+# Loading work.control_unit
+# Loading work.decoder
+# Loading work.conditional_logic
+# Loading work.REG_EN
+# Loading work.conditions
+# Loading work.data_path
+# Loading work.muxARM
+# Loading work.PC_REG
+# Loading work.adderARM
+# Loading work.register_file
+# Loading work.extend
 # Loading work.ALU_N_bits
 # Loading work.mux_Sumador
 # Loading work.sumador
@@ -169,14 +312,39 @@ vsim work.tb_ALU
 # Loading work.right_shift_logic
 # Loading work.mux_ALU
 # Loading work.flags
-# ** Warning: (vsim-3839) C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv(21): Variable '/tb_ALU/dut/flags', driven via a port connection, is multiply driven. See C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv(40).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_ALU/dut File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv
-add wave -position end sim:/tb_ALU/*
+# ** Warning: (vsim-3839) C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv(21): Variable '/tb_assembly/dut2/datapath_unit/ALU/flags', driven via a port connection, is multiply driven. See C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv(40).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_assembly/dut2/datapath_unit/ALU File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv
+# ** Warning: (vsim-3839) C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv(21): Variable '/tb_assembly/dut2/datapath_unit/PCPLUS8', driven via a port connection, is multiply driven. See C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv(31).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_assembly/dut2/datapath_unit File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv
+# ** Warning: (vsim-3839) C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv(20): Variable '/tb_assembly/dut2/datapath_unit/PCPLUS4', driven via a port connection, is multiply driven. See C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv(29).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_assembly/dut2/datapath_unit File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv
+# ** Warning: (vsim-3839) C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv(19): Variable '/tb_assembly/dut2/datapath_unit/PC_in', driven via a port connection, is multiply driven. See C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv(26).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_assembly/dut2/datapath_unit File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv
+# ** Warning: (vsim-3839) C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv(18): Variable '/tb_assembly/dut2/datapath_unit/Result', driven via a port connection, is multiply driven. See C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv(47).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_assembly/dut2/datapath_unit File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv
+# ** Warning: (vsim-3839) C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/tb_assembly.sv(5): Variable '/tb_assembly/PC', driven via a port connection, is multiply driven. See C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/tb_assembly.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_assembly File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/tb_assembly.sv
+add wave -position end sim:/tb_assembly/*
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Chris  Hostname: DESKTOP-QNMHHR9  ProcessID: 12284
-#           Attempting to use alternate WLF file "./wlft0nk4rj".
+#           Attempting to use alternate WLF file "./wlftxf96kn".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft0nk4rj
-run
-# End time: 17:48:08 on Nov 12,2018, Elapsed time: 0:02:07
-# Errors: 0, Warnings: 3
+#           Using alternate file: ./wlftxf96kn
+run -all
+restart -f
+# ** Warning: (vsim-3839) C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv(21): Variable '/tb_assembly/dut2/datapath_unit/ALU/flags', driven via a port connection, is multiply driven. See C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv(40).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_assembly/dut2/datapath_unit/ALU File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/ALU/ALU_N_bits.sv
+# ** Warning: (vsim-3839) C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv(21): Variable '/tb_assembly/dut2/datapath_unit/PCPLUS8', driven via a port connection, is multiply driven. See C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv(31).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_assembly/dut2/datapath_unit File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv
+# ** Warning: (vsim-3839) C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv(20): Variable '/tb_assembly/dut2/datapath_unit/PCPLUS4', driven via a port connection, is multiply driven. See C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv(29).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_assembly/dut2/datapath_unit File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv
+# ** Warning: (vsim-3839) C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv(19): Variable '/tb_assembly/dut2/datapath_unit/PC_in', driven via a port connection, is multiply driven. See C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv(26).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_assembly/dut2/datapath_unit File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv
+# ** Warning: (vsim-3839) C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv(18): Variable '/tb_assembly/dut2/datapath_unit/Result', driven via a port connection, is multiply driven. See C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv(47).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_assembly/dut2/datapath_unit File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/Processor/data_path.sv
+# ** Warning: (vsim-3839) C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/tb_assembly.sv(5): Variable '/tb_assembly/PC', driven via a port connection, is multiply driven. See C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/tb_assembly.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_assembly File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Pikachus_Adventure/tb_assembly.sv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 

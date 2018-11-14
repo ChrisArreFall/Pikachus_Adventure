@@ -1,5 +1,5 @@
 Timing Analyzer report for Pikachus_Adventure
-Mon Nov 12 05:41:21 2018
+Tue Nov 13 17:46:47 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -99,12 +99,12 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.17        ;
+; Average used               ; 1.16        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  16.8%      ;
+;     Processor 2            ;  15.9%      ;
 +----------------------------+-------------+
 
 
@@ -125,10 +125,10 @@ refer to the applicable agreement for further details.
 +------------+-----------------+------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                     ; Note ;
 +------------+-----------------+------------------------------------------------+------+
-; 38.65 MHz  ; 38.65 MHz       ; VGA_Controller:VGA_Controller_Unit|pixel_temp  ;      ;
-; 112.73 MHz ; 112.73 MHz      ; PS2_CLK                                        ;      ;
-; 192.46 MHz ; 192.46 MHz      ; clk                                            ;      ;
-; 471.48 MHz ; 471.48 MHz      ; keyboard_controller:keyboard_controller_F|FLAG ;      ;
+; 39.89 MHz  ; 39.89 MHz       ; VGA_Controller:VGA_Controller_Unit|pixel_temp  ;      ;
+; 111.91 MHz ; 111.91 MHz      ; PS2_CLK                                        ;      ;
+; 192.34 MHz ; 192.34 MHz      ; clk                                            ;      ;
+; 465.12 MHz ; 465.12 MHz      ; keyboard_controller:keyboard_controller_F|FLAG ;      ;
 +------------+-----------------+------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -144,10 +144,10 @@ HTML report is unavailable in plain text report export.
 +------------------------------------------------+---------+---------------+
 ; Clock                                          ; Slack   ; End Point TNS ;
 +------------------------------------------------+---------+---------------+
-; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; -12.437 ; -19008.427    ;
-; keyboard_controller:keyboard_controller_F|FLAG ; -10.449 ; -165.216      ;
-; PS2_CLK                                        ; -7.871  ; -28.174       ;
-; clk                                            ; -4.196  ; -78.898       ;
+; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; -12.034 ; -18808.680    ;
+; keyboard_controller:keyboard_controller_F|FLAG ; -10.735 ; -169.123      ;
+; PS2_CLK                                        ; -7.936  ; -41.196       ;
+; clk                                            ; -4.199  ; -81.986       ;
 +------------------------------------------------+---------+---------------+
 
 
@@ -156,10 +156,10 @@ HTML report is unavailable in plain text report export.
 +------------------------------------------------+-------+---------------+
 ; Clock                                          ; Slack ; End Point TNS ;
 +------------------------------------------------+-------+---------------+
-; PS2_CLK                                        ; 0.221 ; 0.000         ;
-; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; 0.236 ; 0.000         ;
-; clk                                            ; 0.373 ; 0.000         ;
-; keyboard_controller:keyboard_controller_F|FLAG ; 0.754 ; 0.000         ;
+; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; 0.078 ; 0.000         ;
+; PS2_CLK                                        ; 0.230 ; 0.000         ;
+; clk                                            ; 0.342 ; 0.000         ;
+; keyboard_controller:keyboard_controller_F|FLAG ; 0.605 ; 0.000         ;
 +------------------------------------------------+-------+---------------+
 
 
@@ -180,10 +180,10 @@ No paths to report.
 +------------------------------------------------+--------+---------------+
 ; Clock                                          ; Slack  ; End Point TNS ;
 +------------------------------------------------+--------+---------------+
-; clk                                            ; -0.762 ; -12.922       ;
-; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; -0.480 ; -1205.902     ;
-; PS2_CLK                                        ; -0.394 ; -11.896       ;
-; keyboard_controller:keyboard_controller_F|FLAG ; -0.394 ; -8.250        ;
+; clk                                            ; -0.754 ; -12.945       ;
+; PS2_CLK                                        ; -0.527 ; -9.698        ;
+; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; -0.488 ; -1220.307     ;
+; keyboard_controller:keyboard_controller_F|FLAG ; -0.394 ; -8.378        ;
 +------------------------------------------------+--------+---------------+
 
 
@@ -198,10 +198,10 @@ No synchronizer chains to report.
 +------------+-----------------+------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                     ; Note ;
 +------------+-----------------+------------------------------------------------+------+
-; 39.96 MHz  ; 39.96 MHz       ; VGA_Controller:VGA_Controller_Unit|pixel_temp  ;      ;
-; 114.92 MHz ; 114.92 MHz      ; PS2_CLK                                        ;      ;
-; 198.97 MHz ; 198.97 MHz      ; clk                                            ;      ;
-; 481.46 MHz ; 481.46 MHz      ; keyboard_controller:keyboard_controller_F|FLAG ;      ;
+; 40.54 MHz  ; 40.54 MHz       ; VGA_Controller:VGA_Controller_Unit|pixel_temp  ;      ;
+; 113.15 MHz ; 113.15 MHz      ; PS2_CLK                                        ;      ;
+; 201.33 MHz ; 201.33 MHz      ; clk                                            ;      ;
+; 471.25 MHz ; 471.25 MHz      ; keyboard_controller:keyboard_controller_F|FLAG ;      ;
 +------------+-----------------+------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -211,10 +211,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------------------+---------+---------------+
 ; Clock                                          ; Slack   ; End Point TNS ;
 +------------------------------------------------+---------+---------------+
-; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; -12.012 ; -18503.804    ;
-; keyboard_controller:keyboard_controller_F|FLAG ; -10.137 ; -160.513      ;
-; PS2_CLK                                        ; -7.702  ; -27.126       ;
-; clk                                            ; -4.026  ; -72.820       ;
+; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; -11.833 ; -18619.397    ;
+; keyboard_controller:keyboard_controller_F|FLAG ; -10.344 ; -162.605      ;
+; PS2_CLK                                        ; -7.838  ; -39.443       ;
+; clk                                            ; -3.967  ; -75.791       ;
 +------------------------------------------------+---------+---------------+
 
 
@@ -223,10 +223,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------------------+-------+---------------+
 ; Clock                                          ; Slack ; End Point TNS ;
 +------------------------------------------------+-------+---------------+
-; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; 0.231 ; 0.000         ;
-; PS2_CLK                                        ; 0.281 ; 0.000         ;
-; clk                                            ; 0.373 ; 0.000         ;
-; keyboard_controller:keyboard_controller_F|FLAG ; 0.748 ; 0.000         ;
+; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; 0.102 ; 0.000         ;
+; PS2_CLK                                        ; 0.299 ; 0.000         ;
+; clk                                            ; 0.319 ; 0.000         ;
+; keyboard_controller:keyboard_controller_F|FLAG ; 0.582 ; 0.000         ;
 +------------------------------------------------+-------+---------------+
 
 
@@ -247,10 +247,10 @@ No paths to report.
 +------------------------------------------------+--------+---------------+
 ; Clock                                          ; Slack  ; End Point TNS ;
 +------------------------------------------------+--------+---------------+
-; clk                                            ; -0.762 ; -13.739       ;
-; PS2_CLK                                        ; -0.480 ; -10.998       ;
-; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; -0.465 ; -1186.933     ;
-; keyboard_controller:keyboard_controller_F|FLAG ; -0.394 ; -8.173        ;
+; clk                                            ; -0.753 ; -14.030       ;
+; PS2_CLK                                        ; -0.523 ; -8.859        ;
+; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; -0.476 ; -1193.324     ;
+; keyboard_controller:keyboard_controller_F|FLAG ; -0.394 ; -8.383        ;
 +------------------------------------------------+--------+---------------+
 
 
@@ -265,10 +265,10 @@ No synchronizer chains to report.
 +------------------------------------------------+--------+---------------+
 ; Clock                                          ; Slack  ; End Point TNS ;
 +------------------------------------------------+--------+---------------+
-; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; -7.812 ; -11460.567    ;
-; keyboard_controller:keyboard_controller_F|FLAG ; -6.077 ; -95.986       ;
-; PS2_CLK                                        ; -4.370 ; -9.759        ;
-; clk                                            ; -2.764 ; -49.632       ;
+; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; -7.488 ; -11178.587    ;
+; keyboard_controller:keyboard_controller_F|FLAG ; -6.223 ; -97.598       ;
+; PS2_CLK                                        ; -4.417 ; -20.682       ;
+; clk                                            ; -2.836 ; -55.239       ;
 +------------------------------------------------+--------+---------------+
 
 
@@ -277,10 +277,10 @@ No synchronizer chains to report.
 +------------------------------------------------+--------+---------------+
 ; Clock                                          ; Slack  ; End Point TNS ;
 +------------------------------------------------+--------+---------------+
-; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; -0.019 ; -0.024        ;
-; PS2_CLK                                        ; 0.140  ; 0.000         ;
-; clk                                            ; 0.213  ; 0.000         ;
-; keyboard_controller:keyboard_controller_F|FLAG ; 0.319  ; 0.000         ;
+; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; -0.192 ; -0.554        ;
+; PS2_CLK                                        ; 0.145  ; 0.000         ;
+; clk                                            ; 0.193  ; 0.000         ;
+; keyboard_controller:keyboard_controller_F|FLAG ; 0.312  ; 0.000         ;
 +------------------------------------------------+--------+---------------+
 
 
@@ -301,10 +301,10 @@ No paths to report.
 +------------------------------------------------+--------+---------------+
 ; Clock                                          ; Slack  ; End Point TNS ;
 +------------------------------------------------+--------+---------------+
-; clk                                            ; -0.673 ; -2.893        ;
-; PS2_CLK                                        ; -0.522 ; -8.228        ;
-; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; -0.211 ; -152.871      ;
-; keyboard_controller:keyboard_controller_F|FLAG ; 0.123  ; 0.000         ;
+; clk                                            ; -0.667 ; -2.751        ;
+; PS2_CLK                                        ; -0.544 ; -4.958        ;
+; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; -0.226 ; -149.963      ;
+; keyboard_controller:keyboard_controller_F|FLAG ; 0.126  ; 0.000         ;
 +------------------------------------------------+--------+---------------+
 
 
@@ -319,10 +319,10 @@ No synchronizer chains to report.
 +------------------------------------------------+--------+---------------+
 ; Clock                                          ; Slack  ; End Point TNS ;
 +------------------------------------------------+--------+---------------+
-; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; -6.901 ; -10257.273    ;
-; keyboard_controller:keyboard_controller_F|FLAG ; -5.787 ; -91.511       ;
-; PS2_CLK                                        ; -4.070 ; -8.082        ;
-; clk                                            ; -2.348 ; -40.328       ;
+; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; -6.703 ; -10015.542    ;
+; keyboard_controller:keyboard_controller_F|FLAG ; -5.920 ; -92.874       ;
+; PS2_CLK                                        ; -4.157 ; -17.490       ;
+; clk                                            ; -2.253 ; -45.209       ;
 +------------------------------------------------+--------+---------------+
 
 
@@ -331,10 +331,10 @@ No synchronizer chains to report.
 +------------------------------------------------+--------+---------------+
 ; Clock                                          ; Slack  ; End Point TNS ;
 +------------------------------------------------+--------+---------------+
-; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; -0.067 ; -0.148        ;
-; PS2_CLK                                        ; 0.149  ; 0.000         ;
-; clk                                            ; 0.195  ; 0.000         ;
-; keyboard_controller:keyboard_controller_F|FLAG ; 0.290  ; 0.000         ;
+; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; -0.204 ; -0.738        ;
+; PS2_CLK                                        ; 0.151  ; 0.000         ;
+; clk                                            ; 0.178  ; 0.000         ;
+; keyboard_controller:keyboard_controller_F|FLAG ; 0.274  ; 0.000         ;
 +------------------------------------------------+--------+---------------+
 
 
@@ -355,10 +355,10 @@ No paths to report.
 +------------------------------------------------+--------+---------------+
 ; Clock                                          ; Slack  ; End Point TNS ;
 +------------------------------------------------+--------+---------------+
-; clk                                            ; -0.649 ; -2.843        ;
-; PS2_CLK                                        ; -0.534 ; -7.901        ;
-; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; -0.130 ; -77.115       ;
-; keyboard_controller:keyboard_controller_F|FLAG ; 0.134  ; 0.000         ;
+; clk                                            ; -0.644 ; -2.699        ;
+; PS2_CLK                                        ; -0.583 ; -5.552        ;
+; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; -0.150 ; -73.880       ;
+; keyboard_controller:keyboard_controller_F|FLAG ; 0.126  ; 0.000         ;
 +------------------------------------------------+--------+---------------+
 
 
@@ -373,16 +373,16 @@ No synchronizer chains to report.
 +-------------------------------------------------+------------+--------+----------+---------+---------------------+
 ; Clock                                           ; Setup      ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
 +-------------------------------------------------+------------+--------+----------+---------+---------------------+
-; Worst-case Slack                                ; -12.437    ; -0.067 ; N/A      ; N/A     ; -0.762              ;
-;  PS2_CLK                                        ; -7.871     ; 0.140  ; N/A      ; N/A     ; -0.534              ;
-;  VGA_Controller:VGA_Controller_Unit|pixel_temp  ; -12.437    ; -0.067 ; N/A      ; N/A     ; -0.480              ;
-;  clk                                            ; -4.196     ; 0.195  ; N/A      ; N/A     ; -0.762              ;
-;  keyboard_controller:keyboard_controller_F|FLAG ; -10.449    ; 0.290  ; N/A      ; N/A     ; -0.394              ;
-; Design-wide TNS                                 ; -19280.715 ; -0.148 ; 0.0      ; 0.0     ; -1238.97            ;
-;  PS2_CLK                                        ; -28.174    ; 0.000  ; N/A      ; N/A     ; -11.896             ;
-;  VGA_Controller:VGA_Controller_Unit|pixel_temp  ; -19008.427 ; -0.148 ; N/A      ; N/A     ; -1205.902           ;
-;  clk                                            ; -78.898    ; 0.000  ; N/A      ; N/A     ; -13.739             ;
-;  keyboard_controller:keyboard_controller_F|FLAG ; -165.216   ; 0.000  ; N/A      ; N/A     ; -8.250              ;
+; Worst-case Slack                                ; -12.034    ; -0.204 ; N/A      ; N/A     ; -0.754              ;
+;  PS2_CLK                                        ; -7.936     ; 0.145  ; N/A      ; N/A     ; -0.583              ;
+;  VGA_Controller:VGA_Controller_Unit|pixel_temp  ; -12.034    ; -0.204 ; N/A      ; N/A     ; -0.488              ;
+;  clk                                            ; -4.199     ; 0.178  ; N/A      ; N/A     ; -0.754              ;
+;  keyboard_controller:keyboard_controller_F|FLAG ; -10.735    ; 0.274  ; N/A      ; N/A     ; -0.394              ;
+; Design-wide TNS                                 ; -19100.985 ; -0.738 ; 0.0      ; 0.0     ; -1251.328           ;
+;  PS2_CLK                                        ; -41.196    ; 0.000  ; N/A      ; N/A     ; -9.698              ;
+;  VGA_Controller:VGA_Controller_Unit|pixel_temp  ; -18808.680 ; -0.738 ; N/A      ; N/A     ; -1220.307           ;
+;  clk                                            ; -81.986    ; 0.000  ; N/A      ; N/A     ; -14.030             ;
+;  keyboard_controller:keyboard_controller_F|FLAG ; -169.123   ; 0.000  ; N/A      ; N/A     ; -8.383              ;
 +-------------------------------------------------+------------+--------+----------+---------+---------------------+
 
 
@@ -708,10 +708,10 @@ No synchronizer chains to report.
 ; keyboard_controller:keyboard_controller_F|FLAG ; keyboard_controller:keyboard_controller_F|FLAG ; 8        ; 0         ; 0        ; 0        ;
 ; PS2_CLK                                        ; keyboard_controller:keyboard_controller_F|FLAG ; 0        ; 136       ; 0        ; 0        ;
 ; keyboard_controller:keyboard_controller_F|FLAG ; PS2_CLK                                        ; 0        ; 0         ; 1        ; 1        ;
-; PS2_CLK                                        ; PS2_CLK                                        ; 0        ; 0         ; 0        ; 76       ;
-; clk                                            ; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; 0        ; 0         ; 4338     ; 0        ;
+; PS2_CLK                                        ; PS2_CLK                                        ; 0        ; 0         ; 0        ; 72       ;
+; clk                                            ; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; 0        ; 0         ; 4407     ; 0        ;
 ; keyboard_controller:keyboard_controller_F|FLAG ; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; 16       ; 8         ; 0        ; 0        ;
-; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; 32855368 ; 305322937 ; 219843   ; 1335152  ;
+; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; 35308753 ; 468975655 ; 266061   ; 2750768  ;
 +------------------------------------------------+------------------------------------------------+----------+-----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -726,10 +726,10 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 ; keyboard_controller:keyboard_controller_F|FLAG ; keyboard_controller:keyboard_controller_F|FLAG ; 8        ; 0         ; 0        ; 0        ;
 ; PS2_CLK                                        ; keyboard_controller:keyboard_controller_F|FLAG ; 0        ; 136       ; 0        ; 0        ;
 ; keyboard_controller:keyboard_controller_F|FLAG ; PS2_CLK                                        ; 0        ; 0         ; 1        ; 1        ;
-; PS2_CLK                                        ; PS2_CLK                                        ; 0        ; 0         ; 0        ; 76       ;
-; clk                                            ; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; 0        ; 0         ; 4338     ; 0        ;
+; PS2_CLK                                        ; PS2_CLK                                        ; 0        ; 0         ; 0        ; 72       ;
+; clk                                            ; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; 0        ; 0         ; 4407     ; 0        ;
 ; keyboard_controller:keyboard_controller_F|FLAG ; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; 16       ; 8         ; 0        ; 0        ;
-; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; 32855368 ; 305322937 ; 219843   ; 1335152  ;
+; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; VGA_Controller:VGA_Controller_Unit|pixel_temp  ; 35308753 ; 468975655 ; 266061   ; 2750768  ;
 +------------------------------------------------+------------------------------------------------+----------+-----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -754,9 +754,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 2     ; 2    ;
-; Unconstrained Input Port Paths  ; 64    ; 64   ;
-; Unconstrained Output Ports      ; 42    ; 42   ;
-; Unconstrained Output Port Paths ; 1145  ; 1145 ;
+; Unconstrained Input Port Paths  ; 65    ; 65   ;
+; Unconstrained Output Ports      ; 44    ; 44   ;
+; Unconstrained Output Port Paths ; 1213  ; 1213 ;
 +---------------------------------+-------+------+
 
 
@@ -819,6 +819,8 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; hex1[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; hsync       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; led_Y[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; led_x[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; led_x[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; n25MHZCLK   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; r[0]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; r[1]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -879,6 +881,8 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; hex1[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; hsync       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; led_Y[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; led_x[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; led_x[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; n25MHZCLK   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; r[0]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; r[1]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -898,7 +902,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Mon Nov 12 05:39:51 2018
+    Info: Processing started: Tue Nov 13 17:45:27 2018
 Info: Command: quartus_sta Pikachus_Adventure -c Pikachus_Adventure
 Info: qsta_default_script.tcl version: #2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -918,120 +922,120 @@ Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -12.437
+Info (332146): Worst-case setup slack is -12.034
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -12.437          -19008.427 VGA_Controller:VGA_Controller_Unit|pixel_temp 
-    Info (332119):   -10.449            -165.216 keyboard_controller:keyboard_controller_F|FLAG 
-    Info (332119):    -7.871             -28.174 PS2_CLK 
-    Info (332119):    -4.196             -78.898 clk 
-Info (332146): Worst-case hold slack is 0.221
+    Info (332119):   -12.034          -18808.680 VGA_Controller:VGA_Controller_Unit|pixel_temp 
+    Info (332119):   -10.735            -169.123 keyboard_controller:keyboard_controller_F|FLAG 
+    Info (332119):    -7.936             -41.196 PS2_CLK 
+    Info (332119):    -4.199             -81.986 clk 
+Info (332146): Worst-case hold slack is 0.078
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.221               0.000 PS2_CLK 
-    Info (332119):     0.236               0.000 VGA_Controller:VGA_Controller_Unit|pixel_temp 
-    Info (332119):     0.373               0.000 clk 
-    Info (332119):     0.754               0.000 keyboard_controller:keyboard_controller_F|FLAG 
+    Info (332119):     0.078               0.000 VGA_Controller:VGA_Controller_Unit|pixel_temp 
+    Info (332119):     0.230               0.000 PS2_CLK 
+    Info (332119):     0.342               0.000 clk 
+    Info (332119):     0.605               0.000 keyboard_controller:keyboard_controller_F|FLAG 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.762
+Info (332146): Worst-case minimum pulse width slack is -0.754
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.762             -12.922 clk 
-    Info (332119):    -0.480           -1205.902 VGA_Controller:VGA_Controller_Unit|pixel_temp 
-    Info (332119):    -0.394             -11.896 PS2_CLK 
-    Info (332119):    -0.394              -8.250 keyboard_controller:keyboard_controller_F|FLAG 
+    Info (332119):    -0.754             -12.945 clk 
+    Info (332119):    -0.527              -9.698 PS2_CLK 
+    Info (332119):    -0.488           -1220.307 VGA_Controller:VGA_Controller_Unit|pixel_temp 
+    Info (332119):    -0.394              -8.378 keyboard_controller:keyboard_controller_F|FLAG 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -12.012
+Info (332146): Worst-case setup slack is -11.833
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -12.012          -18503.804 VGA_Controller:VGA_Controller_Unit|pixel_temp 
-    Info (332119):   -10.137            -160.513 keyboard_controller:keyboard_controller_F|FLAG 
-    Info (332119):    -7.702             -27.126 PS2_CLK 
-    Info (332119):    -4.026             -72.820 clk 
-Info (332146): Worst-case hold slack is 0.231
+    Info (332119):   -11.833          -18619.397 VGA_Controller:VGA_Controller_Unit|pixel_temp 
+    Info (332119):   -10.344            -162.605 keyboard_controller:keyboard_controller_F|FLAG 
+    Info (332119):    -7.838             -39.443 PS2_CLK 
+    Info (332119):    -3.967             -75.791 clk 
+Info (332146): Worst-case hold slack is 0.102
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.231               0.000 VGA_Controller:VGA_Controller_Unit|pixel_temp 
-    Info (332119):     0.281               0.000 PS2_CLK 
-    Info (332119):     0.373               0.000 clk 
-    Info (332119):     0.748               0.000 keyboard_controller:keyboard_controller_F|FLAG 
+    Info (332119):     0.102               0.000 VGA_Controller:VGA_Controller_Unit|pixel_temp 
+    Info (332119):     0.299               0.000 PS2_CLK 
+    Info (332119):     0.319               0.000 clk 
+    Info (332119):     0.582               0.000 keyboard_controller:keyboard_controller_F|FLAG 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.762
+Info (332146): Worst-case minimum pulse width slack is -0.753
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.762             -13.739 clk 
-    Info (332119):    -0.480             -10.998 PS2_CLK 
-    Info (332119):    -0.465           -1186.933 VGA_Controller:VGA_Controller_Unit|pixel_temp 
-    Info (332119):    -0.394              -8.173 keyboard_controller:keyboard_controller_F|FLAG 
+    Info (332119):    -0.753             -14.030 clk 
+    Info (332119):    -0.523              -8.859 PS2_CLK 
+    Info (332119):    -0.476           -1193.324 VGA_Controller:VGA_Controller_Unit|pixel_temp 
+    Info (332119):    -0.394              -8.383 keyboard_controller:keyboard_controller_F|FLAG 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -7.812
+Info (332146): Worst-case setup slack is -7.488
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -7.812          -11460.567 VGA_Controller:VGA_Controller_Unit|pixel_temp 
-    Info (332119):    -6.077             -95.986 keyboard_controller:keyboard_controller_F|FLAG 
-    Info (332119):    -4.370              -9.759 PS2_CLK 
-    Info (332119):    -2.764             -49.632 clk 
-Info (332146): Worst-case hold slack is -0.019
+    Info (332119):    -7.488          -11178.587 VGA_Controller:VGA_Controller_Unit|pixel_temp 
+    Info (332119):    -6.223             -97.598 keyboard_controller:keyboard_controller_F|FLAG 
+    Info (332119):    -4.417             -20.682 PS2_CLK 
+    Info (332119):    -2.836             -55.239 clk 
+Info (332146): Worst-case hold slack is -0.192
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.019              -0.024 VGA_Controller:VGA_Controller_Unit|pixel_temp 
-    Info (332119):     0.140               0.000 PS2_CLK 
-    Info (332119):     0.213               0.000 clk 
-    Info (332119):     0.319               0.000 keyboard_controller:keyboard_controller_F|FLAG 
+    Info (332119):    -0.192              -0.554 VGA_Controller:VGA_Controller_Unit|pixel_temp 
+    Info (332119):     0.145               0.000 PS2_CLK 
+    Info (332119):     0.193               0.000 clk 
+    Info (332119):     0.312               0.000 keyboard_controller:keyboard_controller_F|FLAG 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.673
+Info (332146): Worst-case minimum pulse width slack is -0.667
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.673              -2.893 clk 
-    Info (332119):    -0.522              -8.228 PS2_CLK 
-    Info (332119):    -0.211            -152.871 VGA_Controller:VGA_Controller_Unit|pixel_temp 
-    Info (332119):     0.123               0.000 keyboard_controller:keyboard_controller_F|FLAG 
+    Info (332119):    -0.667              -2.751 clk 
+    Info (332119):    -0.544              -4.958 PS2_CLK 
+    Info (332119):    -0.226            -149.963 VGA_Controller:VGA_Controller_Unit|pixel_temp 
+    Info (332119):     0.126               0.000 keyboard_controller:keyboard_controller_F|FLAG 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -6.901
+Info (332146): Worst-case setup slack is -6.703
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -6.901          -10257.273 VGA_Controller:VGA_Controller_Unit|pixel_temp 
-    Info (332119):    -5.787             -91.511 keyboard_controller:keyboard_controller_F|FLAG 
-    Info (332119):    -4.070              -8.082 PS2_CLK 
-    Info (332119):    -2.348             -40.328 clk 
-Info (332146): Worst-case hold slack is -0.067
+    Info (332119):    -6.703          -10015.542 VGA_Controller:VGA_Controller_Unit|pixel_temp 
+    Info (332119):    -5.920             -92.874 keyboard_controller:keyboard_controller_F|FLAG 
+    Info (332119):    -4.157             -17.490 PS2_CLK 
+    Info (332119):    -2.253             -45.209 clk 
+Info (332146): Worst-case hold slack is -0.204
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.067              -0.148 VGA_Controller:VGA_Controller_Unit|pixel_temp 
-    Info (332119):     0.149               0.000 PS2_CLK 
-    Info (332119):     0.195               0.000 clk 
-    Info (332119):     0.290               0.000 keyboard_controller:keyboard_controller_F|FLAG 
+    Info (332119):    -0.204              -0.738 VGA_Controller:VGA_Controller_Unit|pixel_temp 
+    Info (332119):     0.151               0.000 PS2_CLK 
+    Info (332119):     0.178               0.000 clk 
+    Info (332119):     0.274               0.000 keyboard_controller:keyboard_controller_F|FLAG 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.649
+Info (332146): Worst-case minimum pulse width slack is -0.644
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.649              -2.843 clk 
-    Info (332119):    -0.534              -7.901 PS2_CLK 
-    Info (332119):    -0.130             -77.115 VGA_Controller:VGA_Controller_Unit|pixel_temp 
-    Info (332119):     0.134               0.000 keyboard_controller:keyboard_controller_F|FLAG 
+    Info (332119):    -0.644              -2.699 clk 
+    Info (332119):    -0.583              -5.552 PS2_CLK 
+    Info (332119):    -0.150             -73.880 VGA_Controller:VGA_Controller_Unit|pixel_temp 
+    Info (332119):     0.126               0.000 keyboard_controller:keyboard_controller_F|FLAG 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5203 megabytes
-    Info: Processing ended: Mon Nov 12 05:41:21 2018
-    Info: Elapsed time: 00:01:30
-    Info: Total CPU time (on all processors): 00:01:38
+    Info: Peak virtual memory: 5210 megabytes
+    Info: Processing ended: Tue Nov 13 17:46:47 2018
+    Info: Elapsed time: 00:01:20
+    Info: Total CPU time (on all processors): 00:01:28
 
 

@@ -14,14 +14,14 @@ module main(input  logic clk, reset,
 			sevenSegmentDisplay sevenSegmentDisplay_F_1 (offset_ARM[3:0],hex0);
 			sevenSegmentDisplay sevenSegmentDisplay_F_2 (offset_ARM[7:4],hex1);
 			
-			assign led_Y = (flag) ? ((KB_CODE == 8'h23) ? 1 : 0) : 0;
+			assign led_Y[0] = (flag) ? ((KB_CODE == 8'h23) ? 1 : 0) : 0;
 			assign move = (flag) ? ((KB_CODE == 8'h23) ? 1 : 0) : 0;
 			
 			//------------VGA------------------
 			VGA_Controller VGA_Controller_Unit(.clk(clk), .reset(reset), .hsync(hsync), .vsync(vsync), .enable(video_on), .clk_out(n25MHZCLK), .x(x), .y(y));
 			
 			//----------Sprites-------------------
-			color_mux color_mux_unit(n25MHZCLK,move,x,y,offset_ARM,temp_r,temp_g,temp_b);
+			color_mux color_mux_unit(n25MHZCLK,move,1'b1,0,1,x,y,offset_ARM,temp_r,temp_g,temp_b);
 			
 			//----------Processor-----------------
 			logic [31:0] PC = 0, Instruction, ReadData,DataAddr,WriteData;
@@ -41,6 +41,8 @@ module main(input  logic clk, reset,
 				
 			assign ReadData = memory[DataAddr[31:2]];
 			assign offset_ARM = memory[0];
+			assign led_x[0] = memory[3];
+			assign led_x[1] = memory[6];
 			//--------------------------------------
 	
 			assign r = (video_on) ? temp_r : 8'b0;

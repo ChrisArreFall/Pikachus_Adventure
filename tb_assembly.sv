@@ -1,8 +1,8 @@
 module tb_assembly();
 	//----------Processor-----------------
-	logic clk,reset,MemWrite;
+	logic clk,reset,MemWrite,endjuego;
 	logic [7:0] KB_CODE=0;
-	logic [31:0] PC = 0, Instruction, ReadData,DataAddr,WriteData;
+	logic [31:0] PC = 0, Instruction, ReadData,DataAddr,WriteData,offset_ARM,coinCount,juego;
 	instruction_memory dut1(PC, Instruction); 
 	ARMV4 dut2(clk, reset,Instruction,ReadData,MemWrite,PC, DataAddr, WriteData);
 	//----------RAM------------------------
@@ -18,6 +18,10 @@ module tb_assembly();
 			
 	assign ReadData = memory[DataAddr[31:2]];
 	assign offset_ARM = memory[0];
+	assign coinCount = memory[5];
+	assign endjuego = memory[3];
+	assign juego = memory[2];
+	
 	//--------------------------------------
 	// initialize test
 	initial begin

@@ -164,6 +164,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "led_x[0]",
+					"strict" : false
+				},
+				{
+					"name" : "led_x[1]",
+					"strict" : false
+				},
+				{
 					"name" : "led_Y[0]",
 					"strict" : false
 				},
